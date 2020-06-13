@@ -1,0 +1,54 @@
+.reviews__avatar{
+    position: relative;
+    width: 253px;
+    height: 260px;
+    background-image: url('../img/section_3/photo1.jpg');
+    background-size: 100%;
+    margin-left: 10px;
+    top:-5px;
+    background-position: top 37% left 50%;
+}
+//715 260
+.reviews{
+    width: 940px;
+    height: 450px;
+}
+.reviews__title{
+    margin-top: 5px;
+    left: 0;
+    font-family: 'AlegreyaSans-Bold';
+    font-size: 30px;
+}
+.reviews__text{
+    position: relative;
+    height: 105px;
+    width: 445px;
+    font-family: 'AlegreyaSans-Regular';
+    font-size: 18px;
+    color: rgb(171,172,172);
+}
+.reviews__author{
+    font-family: 'AlegreyaSans-Medium';
+}
+
+.reviews__display{
+    display: flex;
+    position: relative;
+    background-image: url('../img/section_3/rectangle.png');
+    background-repeat: no-repeat;
+    padding: 50px 40px 34px;
+    top: 0px;
+    left: 0px;
+    width: 940px;
+    height: 350px;
+}
+.reviews__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 445px;
+    height: 245px;
+    margin-left: 20px;
+    position: relative;
+    
+}

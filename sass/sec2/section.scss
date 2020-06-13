@@ -1,0 +1,12 @@
+@import 'container','headline','benefits','benefits__item';
+
+
+.section{
+    height: 650px;
+    top: auto;
+    left: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
