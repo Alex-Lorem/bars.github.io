@@ -1,0 +1,29 @@
+.menu__list{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 87px;
+    
+    a {
+    position: relative;
+    top: 37px;
+    left: 0;
+    color: #fff;
+    }
+    .num{
+        top: 30px;
+        font-size: 24px;
+    }
+//    .num:before{
+//        position: absolute;
+//        left: 0;
+//        top: 0;
+//        width: 10px;
+//        height: 10px;
+//        content: url('../icons/phone.svg');
+//        background-size: 20%;
+//        font-size: 20px;
+//        
+//    }
+    
+}
