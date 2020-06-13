@@ -1,0 +1,35 @@
+@import 'sec1/section','sec2/section','sec3/section','sec4/section','fonts.scss','normalize.css';
+ 
+
+$baseFont:18px;
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-decoration-style: none;
+    list-style-type: none;
+    line-height: 1.22;
+}
+body{
+    font-family: 'Alegreya Sans-Black';
+    font-size: $baseFont;
+    color: black;
+}
+.wrapper{
+    top: 0px;
+    left: 0px;
+    height: 5000px;
+    margin: auto;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
