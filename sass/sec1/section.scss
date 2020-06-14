@@ -5,8 +5,8 @@
     height: 100vh;
     top: auto;
     left:auto;
-    background: url('../img/section_1/background.jpg');
-    background-size: 70%;
+    background:  url(../img/section_1/bars.png)left 78% center,url('../img/section_1/background.jpg') right bottom;
+    //background-size: 100%;
     background-repeat: no-repeat;
     background-color: #61c4d9;
     //object-position: right;
