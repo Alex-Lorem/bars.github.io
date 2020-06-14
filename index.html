@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>CHOCCO</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -39,7 +40,7 @@
                 <h2 class="section__title1">НАТУРАЛЬНЫЕ ШОКОЛАДНЫЕ БАТОНЧИКИ</h2>
                 <p class="explain">Наши батончики идеально подходят для 
 тех, кто следит за своим здоровьем</p>
-                <div class="btn"><a href="" class=""><span class="btn-text">ЗАКАЗАТЬ</span><img src="./ig/section_1/order.png" alt="" class="pic">
+                <div class="btn"><a href="" class="btn__link"><span class="btn-text">ЗАКАЗАТЬ</span><img src="" alt="" class="pic">
                    </a>
                 </div>
                 <div class="descrpt">
@@ -193,9 +194,11 @@
         
         
     </section>
-    <section class="section">
+    <section class="section delivery">
         <div class="container4">
-            <div class="section__title">ЗАКАЖИТЕ ДОСТАВКУ</div>
+           <div class="blueberry-sec4"></div>
+           <div class="leaf-sec4"></div>
+            <div class="sec4__title">ЗАКАЖИТЕ ДОСТАВКУ</div>
             
             <form action="" class="form">
                 <div class="form__col ">
@@ -206,36 +209,36 @@
                             
                         </label>
                         <label for="" class="form__block">
-                            <div class="form__title">Имя</div>
+                            <div class="form__title">Телефон</div>
                             <input type="text" class="form__input">
                             
                         </label>
                     </div>
                     <div class="form__row">
                         <label for="" class="form__block">
-                            <div class="form__title">Имя</div>
+                            <div class="form__title">Улица</div>
                             <input type="text" class="form__input">
                             
                         </label>
                     </div>
                     <div class="form__row">
                         <label for="" class="form__block">
-                            <div class="form__title">Имя</div>
+                            <div class="form__title">Дом</div>
                             <input type="text" class="form__input">
                             
                         </label>
                         <label for="" class="form__block">
-                            <div class="form__title">Имя</div>
+                            <div class="form__title">Корпус</div>
                             <input type="text" class="form__input">
                             
                         </label>
                         <label for="" class="form__block">
-                            <div class="form__title">Имя</div>
+                            <div class="form__title">Квартира</div>
                             <input type="text" class="form__input">
                             
                         </label>
                         <label for="" class="form__block">
-                            <div class="form__title">Имя</div>
+                            <div class="form__title">Этаж</div>
                             <input type="text" class="form__input">
                             
                         </label>
@@ -253,13 +256,13 @@
                     </div>
                     <div class="form__controls">
                         <label for="" class="radio">
-                            <input type="radio" name="radio__elem" id="">
+                            <input type="radio" name="option" id="" class="input">
                             <div class="radio__visible"></div>
                             <div class="radio__title">Потребуется сдача</div>
                             
                         </label>
                         <label for="" class="radio">
-                            <input type="radio" name="radio__elem" id="">
+                            <input type="radio" name="option" id="" class="input">
                             <div class="radio__visible"></div>
                             <div class="radio__title">Оплата по карте</div>
                             
@@ -267,15 +270,19 @@
                     </div>
                     <div class="form__controls">
                         <label for="" class="radio radio-checkbox">
-                            <input type="radio" name="radio__elem" id="">
+                            <input type="checkbox" name="radio__elem" id="" class="input">
                             <div class="radio__visible"></div>
-                            <div class="radio__title">Оплата по карте</div>
+                            <div class="radio__title">Не перезванивать</div>
                             
                         </label>
                     </div>
                 </div>
 
             </form>
+            <div class="form__btns">
+                <input type="submit" value="Заказать" class=" btn-sec4 btn-text btn--green">
+                <input type="reset" value="Очистить" class="btn-sec4 btn-text btn--transparent">
+            </div>
             
         </div>
     </section>
