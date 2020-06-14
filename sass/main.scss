@@ -1,4 +1,4 @@
-@import 'sec1/section','sec2/section','sec3/section','sec4/section','fonts.scss','normalize.css';
+@import 'sec1/section','sec2/section','sec3/section','sec4/section','fonts.scss','normalize.css','fixed-menu';
  
 
 $baseFont:18px;
@@ -19,7 +19,7 @@ body{
 .wrapper{
     top: 0px;
     left: 0px;
-    height: 5000px;
+    height: 3000px;
     margin: auto;
     width: 100%;
 }

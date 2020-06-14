@@ -1,15 +1,26 @@
-.btn-theme-white{
+.btn{
     position: relative;
-    width: 156px;
+    margin-bottom: 30px;;
+    width: 160px;
+    height: 50px;
     margin-top: 15px;
     left: 15px;
     top: 0;
 }
 .btn-text{
+    width: 160px;
+    height: 50px;
+    padding: 18px 35px;
     font-family: 'AlegreyaSans-ExtraBold';
     font-size: 19px;
     color: #365a49;
     position: relative;
     top: 42px;
-    left: 33px;
+    background: #fff;
+    border-radius: 100px;
+    left: 0px;
+    &:hover{
+    background: #365a49;
+    color: black;
+    }
 }
