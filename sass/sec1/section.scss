@@ -2,10 +2,15 @@
 
 .hero{
     width: 100%;
-    height: 650px;
+    height: 100vh;
     top: auto;
     left:auto;
+    background: url('../img/section_1/background.jpg');
+    background-size: 70%;
+    background-repeat: no-repeat;
     background-color: #61c4d9;
+    //object-position: right;
     display: block;
+    
 }
 

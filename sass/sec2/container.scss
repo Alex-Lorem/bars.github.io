@@ -2,9 +2,9 @@
     position: relative;
     width: 940px;
     left: 0;
-    top: 0;
+    top: -200px;
     height: 650px;
-    margin: auto;
+    margin: 0 auto;
 }
 .pattern{
     position: absolute;
@@ -19,7 +19,7 @@
 .raspberry{
     position: absolute;
     left: -80px;
-    top: 450px;
+    top: 550px;
     width: 160px;
     height: 320px;
     background: url('../img/section_2/raspberry.png');
