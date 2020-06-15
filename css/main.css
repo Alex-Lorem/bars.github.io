@@ -1,25 +1,16 @@
 @import url(normalize.css);
 .content {
-  top: 0;
-  left: 0;
-  width: 940px;
-  margin: 0 auto;
-  height: 650px; }
-
-.content_container {
   position: relative;
-  top: 0;
-  left: 0;
-  margin: auto;
+  width: 470px;
+  height: 450px;
+  margin-top: 100px;
   display: flex;
-  justify-content: space-around; }
+  flex-wrap: wrap;
+  justify-content: flex-start; }
 
 .header {
-  top: 0;
-  left: 0;
   width: 940px;
   height: 87px;
-  margin: auto;
   font-family: 'AlegreyaSans-Regular';
   font-size: 18px; }
 
@@ -27,24 +18,23 @@
   top: -10px;
   position: relative;
   left: 0;
-  width: 53px;
-  height: 39px; }
+  width: 53px; }
 
-.menu__list {
+.menu {
   display: flex;
   justify-content: space-between;
   position: relative;
   height: 87px; }
-  .menu__list a {
+  .menu a {
     position: relative;
     top: 37px;
     left: 0;
     color: #fff; }
-  .menu__list .num {
+  .menu .num {
     margin-left: 10px;
     top: 30px;
     font-size: 24px; }
-  .menu__list .num:before {
+  .menu .num:before {
     position: absolute;
     left: -15px;
     top: 1px;
@@ -54,65 +44,10 @@
     background-size: 20%;
     font-size: 20px; }
 
-.l-content {
-  margin-top: 78px; }
-
-.r-content {
-  top: 130px;
-  left: 500px;
-  width: 470px;
-  height: 430px; }
-
-.leaf1 {
-  position: absolute;
-  width: 240px;
-  height: 200px;
-  top: 475px;
-  left: 865px;
-  background-image: url(../img/section_1/leaf1.png); }
-
-.leaf2 {
-  position: absolute;
-  width: 140px;
-  height: 110px;
-  top: 690px;
-  left: 685px;
-  background-repeat: no-repeat;
-  background-image: url(../img/section_1/leaf2.png); }
-
-.leaf3 {
-  position: absolute;
-  width: 60px;
-  height: 100px;
-  top: 750px;
-  left: -45px;
-  background-repeat: no-repeat;
-  background-image: url(../img/section_1/leaf3.png); }
-
-.berries1 {
-  position: absolute;
-  width: 230px;
-  height: 230px;
-  top: 520px;
-  left: 645px;
-  background-repeat: no-repeat;
-  background-image: url(../img/section_1/berries1.png); }
-
-.berries2 {
-  position: absolute;
-  width: 130px;
-  height: 130px;
-  top: 850px;
-  left: 815px;
-  background-repeat: no-repeat;
-  background-image: url(../img/section_1/berries2.png); }
-
 .section__title1 {
   font-family: 'AlegreyaSans-Bold';
   font-size: 48px;
   color: white;
-  left: 0px;
-  position: relative;
   margin-bottom: 20px;
   width: 320px; }
 
@@ -173,7 +108,7 @@
 
 .item-2:before {
   position: absolute;
-  left: 170px;
+  left: 155px;
   top: 0;
   width: 50px;
   height: 50px;
@@ -181,54 +116,73 @@
 
 .item-3:before {
   position: absolute;
-  left: 330px;
+  left: 305px;
   top: 0;
   width: 50px;
   height: 50px;
   content: url("../img/section_1/icon3.png"); }
 
 .container {
-  top: auto;
-  left: auto;
+  position: relative;
   max-width: 1100px;
-  height: 650px;
-  margin: auto; }
+  width: 100%;
+  height: 100%;
+  margin: 0 auto; }
 
 .hero {
   width: 100%;
   height: 100vh;
-  top: auto;
-  left: auto;
+  top: 0px;
+  left: 0px;
   background: url(../img/section_1/bars.png) left 78% center, url("../img/section_1/background.jpg") right bottom;
   background-repeat: no-repeat;
   background-color: #61c4d9;
   display: block; }
 
-.container2 {
-  position: relative;
-  width: 940px;
-  left: 0;
-  top: -200px;
-  height: 650px;
-  margin: 0 auto; }
-
-.pattern {
+.berries1 {
+  background: url("../img/section_1/berries1.png");
+  background-repeat: no-repeat;
   position: absolute;
-  left: -80px;
-  top: 190px;
-  width: 165px;
-  height: 320px;
-  background: url("../img/section_2/pattern.png");
-  background-repeat: no-repeat; }
+  width: 250px;
+  height: 250px;
+  left: 1150px;
+  top: 650px; }
 
-.raspberry {
+.berries2 {
+  background: url("../img/section_1/berries2.png");
+  background-repeat: no-repeat;
   position: absolute;
-  left: -80px;
-  top: 550px;
-  width: 160px;
-  height: 320px;
-  background: url("../img/section_2/raspberry.png");
-  background-repeat: no-repeat; }
+  width: 150px;
+  height: 150px;
+  right: 250px;
+  top: 950px; }
+
+.leaf1 {
+  background: url("../img/section_1/leaf1.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  right: 270px;
+  top: 555px; }
+
+.leaf2 {
+  background: url("../img/section_1/leaf2.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  right: 500px;
+  top: 930px; }
+
+.leaf3 {
+  background: url("../img/section_1/leaf3.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 60px;
+  height: 100px;
+  left: 60px;
+  top: 945px; }
 
 .headline {
   margin: auto;
@@ -257,29 +211,24 @@
   justify-content: space-around;
   margin-top: 40px; }
 
-.ball, .ball {
+.ball {
   position: absolute;
-  left: 0px;
-  top: 325px;
+  right: -35px;
+  top: 63px;
   width: 70px;
   height: 20px;
   background: url("../img/section_2/balls.png");
   background-repeat: no-repeat; }
 
-.ball1 {
-  left: 260px; }
-
-.ball2 {
-  left: 605px; }
-
 .benefits__item {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
   width: 280px;
   flex: 1;
-  margin: 0 4%; }
+  padding: 0 4%; }
 
 .benefit__title {
   font-size: 28px;
@@ -294,15 +243,12 @@
   width: 75px; }
 
 .icon {
-  width: 74px;
-  height: 70px;
   top: 50%;
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%); }
 
 .benefit__desc {
-  width: 270px;
   position: relative;
   font-size: 18px;
   font-family: 'AlegreyaSans-Regular';
@@ -335,7 +281,26 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  position: relative; }
+
+.pattern {
+  position: absolute;
+  left: 0px;
+  top: 190px;
+  width: 165px;
+  height: 320px;
+  background: url("../img/section_2/pattern.png");
+  background-repeat: no-repeat; }
+
+.raspberry {
+  position: absolute;
+  left: 0px;
+  top: 550px;
+  width: 160px;
+  height: 320px;
+  background: url("../img/section_2/raspberry.png");
+  background-repeat: no-repeat; }
 
 .container3 {
   position: relative;
@@ -348,35 +313,31 @@
   position: absolute;
   width: 145px;
   height: 90px;
-  left: 1340px;
-  top: 1950px; }
+  right: 0px;
+  top: 0px; }
 
 .berries-sec3 {
   position: absolute;
   width: 195px;
   height: 185px;
-  left: 405px;
-  top: 2500px; }
+  z-index: 1; }
 
 .pattern-sec3 {
   position: absolute;
   width: 70px;
-  height: 285px;
-  left: 400px;
-  top: 2500px;
-  z-index: -1; }
+  height: 285px; }
 
 .reviews__switcher {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  left: 360px;
-  margin-top: 70px;
   width: 250px;
-  height: 80px; }
+  height: 80px;
+  margin: 0 auto; }
 
-.reviews__swither-item {
+.interactive__avatar-link {
+  display: block;
   position: relative;
   width: 65px;
   height: 65px;
@@ -392,63 +353,48 @@
   .interactive-avatar__img--active {
     border-color: #0f5a47; }
 
-.man-img {
-  width: 300%;
-  height: 300%;
-  object-position: -105px -45px; }
-
-.girl-img {
-  width: 250%;
-  height: 250%;
-  object-position: -90px -12px; }
-
 .reviews__avatar {
   position: relative;
   width: 253px;
   height: 260px;
   background-image: url("../img/section_3/photo1.jpg");
-  background-size: 100%;
-  margin-left: 10px;
-  top: -5px;
-  background-position: top 37% left 50%; }
+  background-size: cover;
+  background-position: center;
+  padding: 50px 40px 34px; }
 
 .reviews {
-  width: 940px;
-  height: 450px; }
+  max-width: 940px;
+  height: 450px;
+  margin: 0 auto; }
 
 .reviews__title {
   margin-top: 5px;
   left: 0;
+  padding-bottom: 20px;
   font-family: 'AlegreyaSans-Bold';
   font-size: 30px; }
 
 .reviews__text {
   position: relative;
   height: 105px;
-  width: 445px;
   font-family: 'AlegreyaSans-Regular';
   font-size: 18px;
   color: #abacac; }
 
 .reviews__author {
-  font-family: 'AlegreyaSans-Medium'; }
+  font-family: 'AlegreyaSans-Medium';
+  padding-top: 20px; }
 
 .reviews__display {
   display: flex;
   position: relative;
   background-image: url("../img/section_3/rectangle.png");
   background-repeat: no-repeat;
-  padding: 50px 40px 34px;
-  top: 0px;
-  left: 0px;
-  width: 940px;
-  height: 350px; }
+  margin-bottom: 100px; }
 
 .reviews__content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 445px;
+  padding-right: 160px;
+  flex: 1;
   height: 245px;
   margin-left: 20px;
   position: relative; }
@@ -458,43 +404,14 @@
   left: -5px;
   top: -25px; }
 
-.container4 {
-  position: relative;
-  width: 1100px;
-  height: 650px;
-  left: 0;
-  top: -180px;
-  margin: 0 auto;
-  color: #365a49;
-  font-family: 'AlegreyaSans-Regular';
-  font-size: 18px; }
+.container-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
-.sec4__title {
-  top: -110px;
-  left: 0;
-  position: relative;
-  text-align: center;
-  margin: 0 auto;
-  font-family: 'AlegreyaSans-Bold';
-  font-size: 48px;
-  color: #365a49; }
-
-.blueberry-sec4 {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  top: 60vh;
-  background-repeat: no-repeat;
-  background-image: url("../img/section_4/blueberry.png"); }
-
-.leaf-sec4 {
-  position: relative;
-  width: 140px;
-  height: 190px;
-  left: 56vw;
-  top: 53vh;
-  background-repeat: no-repeat;
-  background-image: url("../img/section_4/leaf.png"); }
+.form-wrapper {
+  padding: 50px; }
 
 .form {
   top: 0px;
@@ -607,6 +524,32 @@
 
 .delivery {
   background-image: url("../img/section_4/background.jpg"); }
+
+.sec4__title {
+  padding-bottom: 80px;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'AlegreyaSans-Bold';
+  font-size: 48px;
+  color: #365a49; }
+
+.blueberry-sec4 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 570px;
+  background-repeat: no-repeat;
+  background-image: url("../img/section_4/blueberry.png"); }
+
+.leaf-sec4 {
+  position: absolute;
+  width: 140px;
+  height: 210px;
+  right: 200px;
+  top: 540px;
+  background-repeat: no-repeat;
+  background-image: url("../img/section_4/leaf.png"); }
 
 @font-face {
   font-family: 'Alegreya Sans-Black';
