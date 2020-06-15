@@ -1,11 +1,12 @@
-.benefits__item{ 
+.benefits__item{
+    position: relative;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
     width: 280px;
     flex: 1;
-    margin: 0 4%;
+    padding: 0 4%;
 }
 .benefit__title{
     font-size: 28px;
@@ -20,15 +21,14 @@
     width: 75px;
 }
 .icon{
-    width: 74px;
-    height: 70px;
+    
     top: 50%;
     left: 50%;
     position: absolute; 
     transform: translate(-50%,-50%);
 }
 .benefit__desc{
-    width: 270px;
+    //width: 270px;
     position: relative;
     font-size: 18px;
     font-family: 'AlegreyaSans-Regular';

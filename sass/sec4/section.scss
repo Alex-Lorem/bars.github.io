@@ -2,3 +2,31 @@
 .delivery{
     background-image: url('../img/section_4/background.jpg');
 }
+.sec4__title{
+    padding-bottom:80px; 
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    //margin-top: 0px;
+    font-family: 'AlegreyaSans-Bold';
+    font-size: 48px;
+    color: #365a49;
+}
+.blueberry-sec4{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 570px;
+    background-repeat: no-repeat;
+    background-image: url('../img/section_4/blueberry.png');
+}
+.leaf-sec4{
+    position: absolute;
+    width: 140px;
+    height: 210px;
+    right: 200px;
+    top: 540px;
+    background-repeat: no-repeat;
+    background-image: url('../img/section_4/leaf.png');
+
+}

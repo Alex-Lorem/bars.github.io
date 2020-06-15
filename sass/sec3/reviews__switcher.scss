@@ -3,21 +3,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    left: 360px;
-    margin-top:70px;
     width: 250px;
     height: 80px;
+    margin: 0 auto;
     
 }
 
-.reviews__swither-item{
+.interactive__avatar-link
+    {
+        display: block;
     position: relative;
     width: 65px;
     height: 65px;
     border:6px solid transparent;
     border-radius: 50%;
     overflow: hidden;
-}
+    }   
+
 .interactive-avatar__img{
     display: block;
     width: 100%;
@@ -27,16 +29,4 @@
         border-color: #0f5a47;
     }
 }
-.man-img{
-    
-    width: 300%;
-    height: 300%;
-    //object-fit: cover;
-    object-position: -105px -45px;
-    
-}
-.girl-img{
-    width: 250%;
-    height: 250%;
-    object-position: -90px -12px;
-}
+

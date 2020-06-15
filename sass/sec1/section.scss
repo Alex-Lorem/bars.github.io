@@ -1,16 +1,62 @@
-@import 'content.scss','header','logo','nav','l-content','r-content','section__title','explain','sec1/order','descrpt','item-1','item-2','item-3','container';
+@import 'content.scss','header','logo','nav','section__title','explain','sec1/order','descrpt','item-1','item-2','item-3','container';
 
 .hero{
     width: 100%;
     height: 100vh;
-    top: auto;
-    left:auto;
+    top: 0px;
+    left:0px;
     background:  url(../img/section_1/bars.png)left 78% center,url('../img/section_1/background.jpg') right bottom;
-    //background-size: 100%;
+    
     background-repeat: no-repeat;
     background-color: #61c4d9;
-    //object-position: right;
+    
     display: block;
     
 }
 
+.berries1{
+    background: url('../img/section_1/berries1.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 1150px;
+    top: 650px;
+}
+.berries2{
+    background: url('../img/section_1/berries2.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    right: 250px;
+    top: 950px;
+}
+.leaf1{
+    background: url('../img/section_1/leaf1.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    right: 270px;
+    top: 555px;
+}
+.leaf2{
+     background: url('../img/section_1/leaf2.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    right: 500px;
+    top: 930px;
+}
+
+.leaf3{
+    background: url('../img/section_1/leaf3.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 60px;
+    height: 100px;
+    left: 60px;
+    top: 945px;
+}

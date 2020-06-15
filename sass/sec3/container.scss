@@ -9,21 +9,20 @@
     position:absolute;
     width: 145px;
     height: 90px;
-    left: 1340px;
-    top: 1950px;
+    right: 0px;
+    top: 0px;
 }
 .berries-sec3{
     position:absolute;
     width: 195px;
     height: 185px;
-    left: 405px;
-    top: 2500px;
+    z-index: 1;
+
 }
 .pattern-sec3{
     position:absolute;
     width: 70px;
     height: 285px;
-    left: 400px;
-    top: 2500px;
-    z-index: -1;
+    
+    
 }
