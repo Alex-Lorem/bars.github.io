@@ -13,20 +13,27 @@
 }
 .pattern{
     position: absolute;
-    left: 0px;
-    top: 190px;
-    width: 165px;
-    height: 320px;
+    left: 0;
+    top: 11.875rem;
+    width: 10.3rem;
+    height: 20rem;
     background: url('../img/section_2/pattern.png');
     background-repeat: no-repeat;
     
+    @include tablets{
+        top: 5rem;
+    }
 }
 .raspberry{
     position: absolute;
-    left: 0px;
-    top: 550px;
-    width: 160px;
-    height: 320px;
+    left: 0;
+    top: 34.3rem;
+    width: 10rem;
+    height: 20rem;
     background: url('../img/section_2/raspberry.png');
     background-repeat: no-repeat;
+    
+    @include tablets{
+        top: 48rem;
+    }
 }

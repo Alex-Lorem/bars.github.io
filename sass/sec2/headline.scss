@@ -1,8 +1,8 @@
 .headline{
     margin: auto;
-    width: 410px;
-    height: 120px;
-    margin-top: 105px;
+    width: 25.625rem;
+    height: 7.5rem‬;
+    margin-top: 6.56rem;
 }
 .headline__subtitle{
     font-family: 'AlegreyaSans-Regular';
@@ -12,11 +12,15 @@
 }
 
 .section__title{
-    font-size: 48px;
-    margin-top: 50px;
-    margin-bottom: 60px;
+    font-size: 3rem;
+    margin-top: 3.1rem;
+    margin-bottom: 3.75rem;
     text-align: center;
     font-family: 'AlegreyaSans-Bold';
+    
+    @include tablets{
+        margin-top: 14rem;
+    }
 }
 .headline__title{
     margin-bottom: 10px;

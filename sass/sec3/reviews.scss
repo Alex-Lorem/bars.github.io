@@ -1,5 +1,7 @@
 .reviews{
     position: relative;
-    left: -5px;
-    top: -25px;
+    
+    @include tablets{
+        background: #f8faf9;
+    }
 }

@@ -1,20 +1,15 @@
 .reviews__switcher{
-    position: relative;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    width: 250px;
-    height: 80px;
+    width: 15.625rem;
     margin: 0 auto;
-    
 }
 
 .interactive__avatar-link
     {
-        display: block;
-    position: relative;
-    width: 65px;
-    height: 65px;
+    display: block;
+    width: 4rem;
+    height: 4rem;
     border:6px solid transparent;
     border-radius: 50%;
     overflow: hidden;

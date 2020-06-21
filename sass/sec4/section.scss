@@ -3,30 +3,41 @@
     background-image: url('../img/section_4/background.jpg');
 }
 .sec4__title{
-    padding-bottom:80px; 
+    padding-bottom:4rem; 
     position: relative;
     text-align: center;
     margin: 0 auto;
     //margin-top: 0px;
     font-family: 'AlegreyaSans-Bold';
-    font-size: 48px;
+    font-size: 4rem;
     color: #365a49;
+    @include tablets{
+        padding-bottom: 1rem;
+    }
 }
 .blueberry-sec4{
     position: absolute;
-    width: 70px;
-    height: 70px;
-    top: 570px;
+    width: 4.375rem;
+    height: 4.375rem;
+    left: 25rem;
+    top: 48.125rem;
     background-repeat: no-repeat;
     background-image: url('../img/section_4/blueberry.png');
+    
+    @include tablets{
+        display: none;
+    }
 }
 .leaf-sec4{
     position: absolute;
-    width: 140px;
-    height: 210px;
-    right: 200px;
-    top: 540px;
+    width: 8.75rem;
+    height: 13.125rem;
+    right: 23.75rem;
+    top: 38.75rem;
     background-repeat: no-repeat;
     background-image: url('../img/section_4/leaf.png');
+     @include tablets{
+        display: none;
+    }
 
 }

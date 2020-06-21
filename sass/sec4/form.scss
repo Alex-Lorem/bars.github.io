@@ -1,12 +1,12 @@
 .form-wrapper{
-    padding: 50px;
+    padding: 3.12rem;
 }
 
 .form {
-    top: 0px;
-    margin: auto;
-    width: 940px;
-    position: relative;
     display: flex;
-    //justify-content: space-between;
+    font-family: 'AlegreyaSans-Regular';
+    color: #365a49;
+    @include tablets{
+        display: block;
+    }
 }

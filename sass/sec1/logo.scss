@@ -1,6 +1,11 @@
+
 .logo{
-    top: -10px; 
+    width: 6rem;
+    @include tablets{
+        margin-left: 2rem;
+    }
+}
+.pic{
     position: relative;
-    left: 0;
-    width: 53px;
+    top: 2rem;
 }

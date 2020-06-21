@@ -1,51 +1,78 @@
 .reviews__avatar{
-    position: relative;
-    width: 253px;
-    height: 260px;
+    
+    width: 15.8rem;
+    height: 16.25rem;
     background-image: url('../img/section_3/photo1.jpg');
     background-size: cover;
     background-position: center;
-    padding: 50px 40px 34px;
+    //padding: 50px 40px 34px;
+    padding-top: 3.125rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 2.1rem;
+    
+    @include tablets{
+        padding-top: 0rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding-bottom: 0rem;
+        width: 130px;
+        height: 130px;
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
 }
-//715 260
-.reviews{
-    max-width: 940px;
-    height: 450px;
+
+.reviews{ 
     margin: 0 auto;
 }
 .reviews__title{
-    margin-top: 5px;
+    padding-top: 0.625rem;
     left: 0;
-    padding-bottom: 20px;
+    
     font-family: 'AlegreyaSans-Bold';
-    font-size: 30px;
+    font-size: 1.875rem‬;
+    
+    @include tablets{
+        padding-top: 2rem;
+    }
 }
 .reviews__text{
     position: relative;
-    height: 105px;
     
+    padding: 4% 0%;
     font-family: 'AlegreyaSans-Regular';
-    font-size: 18px;
+    font-size: 1.125rem;
     color: rgb(171,172,172);
 }
 .reviews__author{
     font-family: 'AlegreyaSans-Medium';
-    padding-top: 20px;
 }
 
 .reviews__display{
     display: flex;
+    
     position: relative;
     background-image: url('../img/section_3/rectangle.png');
     background-repeat: no-repeat;
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem;
     
+    @include tablets{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-size: 100%;
+        margin-bottom: 4rem;
+        
+    }
 }
 .reviews__content{
-    padding-right:160px; 
+    padding-right:10rem; 
     flex: 1;
-    height: 245px;
-    margin-left: 20px;
-    position: relative;
+    height: 15.3rem;
+    margin-left: 1.25rem;
     
+    @include tablets{
+        padding-right:0rem; 
+    }
 }

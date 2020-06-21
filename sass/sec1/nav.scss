@@ -1,31 +1,57 @@
+@import '../media';
+
 .menu{
+    flex: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     position: relative;
-    height: 87px;
+    height: 5.43rem;
+    font-size: 1.2rem;
+    flex-wrap: wrap;
     
+    @include tablets{
+        display: none;
+    } 
+    .li-last{
+        margin-right: 4rem;
+    }
+    li{
+        margin-right: 2.87rem;
+    }
     a {
     position: relative;
-    top: 37px;
+    white-space: nowrap;
+    top: 2.31rem;
     left: 0;
     color: #fff;
     }
+}
+
+.number{
+    @include tablets{
+        display: none;
+    }
+}
     .num{
-        margin-left: 10px;
-        top: 30px;
-        font-size: 24px;
+        position: relative;
+        white-space: nowrap;
+        top: 2rem;
+        left: 0;
+        color: #fff;
+        font-size: 1.5rem;
+        font-family: 'AlegreyaSans-Regular';
     }
     
     .num:before{
         position: absolute;
-        left: -15px;
-        top: 1px;
-        width: 10px;
-        height: 10px;
+        left: -1rem;
+        top: -0.1rem;
+        width: 0.625rem;
+        height: 0.625rem;
         content: url('../img/section_1/phone.png');
         background-size: 20%;
-        font-size: 20px;
+        
         
     }
     
-}
+

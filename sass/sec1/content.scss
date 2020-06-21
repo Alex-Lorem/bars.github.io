@@ -1,10 +1,27 @@
+@import '../media.scss';
 .content{
     position: relative;
-    width: 470px;
-    height: 450px;
-    margin-top: 100px;
+    width: 29.37rem;
+    height: 28.1rem;
+    margin-top: 6.25rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    
+    @include tablets{
+        width: 100%;
+        height: 80%;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 0;
+        &:before{
+            content: url('../img/section_1/back-img.png');
+        }
+    }
 }
 

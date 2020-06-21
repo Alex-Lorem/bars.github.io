@@ -1,6 +1,6 @@
 .radio{
     display: flex;
-    margin-left: 20px;
+    margin-left: 1.25rem;
     cursor: pointer;
     
     &--checkbox{
@@ -23,8 +23,8 @@
     margin-top: 10px;
 }
 .radio__visible{
-    width: 26px;
-    height: 26px;
+    width: 1.625rem‬;
+    height: 1.625rem‬;
     position: relative;
     background: #fff;
     border-radius: 50%;
@@ -45,12 +45,15 @@
 .btn-sec4{
     padding: 0;
     border:0px;
-    top: 60px;
-    left: 550px;
+    top: 3.75rem;
+    left:25rem;
     margin-left: 20px;
     background: #365a49;
     color: #fff;
-    
+    @include tablets{
+        left: 0;
+        margin-left: 0;
+    }
 }
 .btn--green{
     &:hover{
@@ -65,5 +68,10 @@
     &:hover{
         color: #365a49;
         background: transparent;
+    }
+}
+.form__btns{
+    @include tablets{
+        padding: 0 16%;
     }
 }
