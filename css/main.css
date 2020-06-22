@@ -469,10 +469,10 @@
   margin: 0 auto; }
 
 .reviews__title {
-  padding-top: 0.625rem;
+  padding-top: 1rem;
   left: 0;
   font-family: 'AlegreyaSans-Bold';
-  font-size: 1.875rem‬; }
+  font-size: 1.875rem; }
   @media screen and (max-width: 768px) {
     .reviews__title {
       padding-top: 2rem; } }
@@ -485,7 +485,8 @@
   color: #abacac; }
 
 .reviews__author {
-  font-family: 'AlegreyaSans-Medium'; }
+  font-family: 'AlegreyaSans-Medium';
+  font-size: 1.125rem; }
 
 .reviews__display {
   display: flex;
@@ -502,7 +503,7 @@
       margin-bottom: 4rem; } }
 
 .reviews__content {
-  padding-right: 10rem;
+  padding-right: 18rem;
   flex: 1;
   height: 15.3rem;
   margin-left: 1.25rem; }
@@ -531,7 +532,8 @@
 .form {
   display: flex;
   font-family: 'AlegreyaSans-Regular';
-  color: #365a49; }
+  color: #365a49;
+  font-size: 1.125rem; }
   @media screen and (max-width: 768px) {
     .form {
       display: block; } }
