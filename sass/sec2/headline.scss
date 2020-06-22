@@ -21,6 +21,9 @@
     @include tablets{
         margin-top: 14rem;
     }
+     @include phones{
+        margin-top: 0rem;
+    }
 }
 .headline__title{
     margin-bottom: 10px;

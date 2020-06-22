@@ -2,10 +2,15 @@
     top: 0;
     left: 0px;
 }
-.item-1:before{
-    position: absolute;
-    left: -0.625rem;
-    top: 0;
-   
-    content: url('../img/section_1/icon1.png');
+.leaf-svg{
+    //position: absolute;
+    width: 45px;
+    height: 45px;
 }
+//.item-1:before{
+//    position: absolute;
+//    left: -0.625rem;
+//    top: 0;
+//   
+//    content: url('../img/section_1/icon1.png');
+//}

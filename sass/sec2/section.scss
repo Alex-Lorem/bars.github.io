@@ -23,6 +23,9 @@
     @include tablets{
         top: 5rem;
     }
+    @include phones{
+        display: none;
+    }
 }
 .raspberry{
     position: absolute;
@@ -35,5 +38,8 @@
     
     @include tablets{
         top: 48rem;
+    }
+    @include phones{
+        display: none;
     }
 }

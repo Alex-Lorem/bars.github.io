@@ -50,6 +50,9 @@
 .form__controls{
     display: flex;
     flex-wrap: wrap;
+    @include phones{
+        justify-content: center;
+    }
 }
 .form__block{
     margin-right: 1.25rem‬;

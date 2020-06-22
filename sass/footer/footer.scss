@@ -4,17 +4,29 @@
 }
 .num-color{
     color: #365a49;
-    margin-left: 15px;
-    top: 0;
     
+    top: 0;
+}
+.phone-icon{
+    left: 5px;
 }
 .footer-number{
+    display: inline-flex;
     padding-top: 20px;
+    @include phones{
+        padding-top: 5px;
+    }
 }
 .container--footer{
     display: flex;
     justify-content: space-between;
     max-width: 58.75rem;
+    
+    @include phones{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 .address{
     font-family: 'AlegreyaSans-Regular';
@@ -23,9 +35,21 @@
 .social{
     display: flex;
     justify-content: space-between;
-    width: 140px;
-    height: 35px;
+    margin-top: 20px;
+    width: 8.75rem;
+    height: 2.1rem;
+    @include phones{
+        margin-top: 10px;
+    }
+}
+.social-item{
+    fill:#b2b2b2;
+    width: 23px;
+    height: 23px;
     
+    &:hover{
+        fill:black;
+    }
 }
 
 

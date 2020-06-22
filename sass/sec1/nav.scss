@@ -13,10 +13,10 @@
         display: none;
     } 
     .li-last{
-        margin-right: 4rem;
+        margin-right: 3rem;
     }
     li{
-        margin-right: 2.87rem;
+        margin-right: 2.6rem;
     }
     a {
     position: relative;
@@ -26,32 +26,40 @@
     color: #fff;
     }
 }
-
+.svg-num{
+    
+    margin: 7px 5px;
+    margin-left: 0;
+    width: 13px;
+    height: 13px;
+}
 .number{
+    display: inline-flex;
+    margin-top: 2.1rem;
     @include tablets{
         display: none;
     }
 }
     .num{
-        position: relative;
+        
         white-space: nowrap;
-        top: 2rem;
+        
         left: 0;
         color: #fff;
         font-size: 1.5rem;
         font-family: 'AlegreyaSans-Regular';
     }
     
-    .num:before{
-        position: absolute;
-        left: -1rem;
-        top: -0.1rem;
-        width: 0.625rem;
-        height: 0.625rem;
-        content: url('../img/section_1/phone.png');
-        background-size: 20%;
-        
-        
-    }
+//    .num:before{
+//        position: absolute;
+//        left: -1rem;
+//        top: -0.1rem;
+//        width: 0.625rem;
+//        height: 0.625rem;
+//        content: url('../img/section_1/phone.png');
+//        background-size: 20%;
+//        
+//        
+//    }
     
 

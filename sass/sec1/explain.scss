@@ -11,4 +11,7 @@
         margin-top: 0;
         padding: 0 25%;
     }
+    @include phones{
+        padding: 0 17%;
+    }
 }

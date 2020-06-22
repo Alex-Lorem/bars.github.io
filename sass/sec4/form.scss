@@ -1,5 +1,8 @@
 .form-wrapper{
     padding: 3.12rem;
+    @include phones{
+        padding: 0;
+    }
 }
 
 .form {
