@@ -365,7 +365,7 @@
 
 .benefits {
   display: flex;
-  margin-top: 5rem; }
+  margin-top: 10rem; }
   @media screen and (max-width: 768px) {
     .benefits {
       margin-top: 1rem;
