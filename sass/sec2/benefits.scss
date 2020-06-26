@@ -4,9 +4,11 @@
    
     margin-top: 5rem;
     @include tablets{
-        margin-top: 6rem;
+        margin-top: 1rem;
         flex-direction: column;
-        
+    }
+    @include phones{
+       margin-top:5rem;
     }
 }
 .ball{

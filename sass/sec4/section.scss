@@ -11,16 +11,16 @@
     font-family: 'AlegreyaSans-Bold';
     font-size: 4rem;
     color: #365a49;
-    @include tablets{
-        padding-bottom: 1rem;
+    @include phones{
+        padding: 0;
     }
 }
 .blueberry-sec4{
     position: absolute;
     width: 4.375rem;
     height: 4.375rem;
-    left: 25rem;
-    top: 48.125rem;
+    left: 25%;
+    top: 71%;
     background-repeat: no-repeat;
     background-image: url('../img/section_4/blueberry.png');
     
@@ -32,8 +32,8 @@
     position: absolute;
     width: 8.75rem;
     height: 13.125rem;
-    right: 23.75rem;
-    top: 38.75rem;
+    right: 4%;
+    top: 66%;
     background-repeat: no-repeat;
     background-image: url('../img/section_4/leaf.png');
      @include tablets{

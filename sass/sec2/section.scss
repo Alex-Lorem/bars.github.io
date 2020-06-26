@@ -14,7 +14,7 @@
 .pattern{
     position: absolute;
     left: 0;
-    top: 11.875rem;
+    top: 12%;
     width: 10.3rem;
     height: 20rem;
     background: url('../img/section_2/pattern.png');
@@ -30,14 +30,14 @@
 .raspberry{
     position: absolute;
     left: 0;
-    top: 34.3rem;
+    top: 50%;
     width: 10rem;
-    height: 20rem;
+    height: 21rem;
     background: url('../img/section_2/raspberry.png');
     background-repeat: no-repeat;
     
     @include tablets{
-        top: 48rem;
+        top: 35%;
     }
     @include phones{
         display: none;

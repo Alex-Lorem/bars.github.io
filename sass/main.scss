@@ -26,6 +26,7 @@ html{
     text-decoration-style: none;
     list-style-type: none;
     line-height: 1.22;
+    box-sizing: border-box;
 }
 body{
     font-family: 'Alegreya Sans-Black';
@@ -35,9 +36,15 @@ body{
 .wrapper{
     width: 100%;
 }
+ul, li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-
-
+a {
+    text-decoration: none;
+}
 
 
 

@@ -1,16 +1,22 @@
-.form-wrapper{
-    padding: 3.12rem;
-    @include phones{
-        padding: 0;
-        margin-left: 10px;
-    }
+.form__btns{
+    display: flex;
+    justify-content: center;
 }
 
+.form__input{
+    outline: none;
+}
 .form {
+    flex-wrap: wrap;
+    justify-content: flex-end;
     display: flex;
     font-family: 'AlegreyaSans-Regular';
+    outline: none;
     color: #365a49;
     font-size: 1.125rem;
+    &:last-child{
+        align-self: flex-end;
+    }
     @include tablets{
         display: block;
     }

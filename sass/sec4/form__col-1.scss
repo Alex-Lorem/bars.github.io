@@ -1,13 +1,18 @@
-
+.form-wrapper{
+    display: flex;
+    
+    @include tablets{
+        display: block;
+        padding: 0 9%;
+        
+    }
+}
 .form__col{
-    
-    //flex: 1;
-    width: 28.75rem;
-    
-    margin-right: 1.25rem;
+    flex: 1;
     flex-wrap: wrap;
-    &:last-child {
-    margin-right: 0px;
+    margin-bottom: 10%;
+    @include phones{
+        margin-bottom: 5%;
     }
 }
 .form__row{
@@ -49,11 +54,11 @@
 }
 .form__controls{
     display: flex;
-    flex-wrap: wrap;
+    
     @include phones{
         justify-content: center;
-    }
+        align-items: center;}
 }
 .form__block{
-    margin-right: 1.25rem‬;
+    
 }

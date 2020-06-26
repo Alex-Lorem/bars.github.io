@@ -1,20 +1,32 @@
 
 .strawberry{
     position:absolute;
-    
     right: 0;
     top: 0;
+    @include phones{
+        display: none;
+    }
 }
 .berries-sec3{
     position:absolute;
-    top: 78%;
-    z-index: 1;
+    top: 64%;
+    z-index: 2;
 
 }
 .pattern-sec3{
+    z-index: 1;
     position:absolute;
-    width: 4.375rem;
-    height: 17.8rem;
-    
-    
+    top: 59%;   
+}
+.pattern-img{
+    @include phones{
+        width: 70px;
+        height: 250px;
+    }
+}
+.berry-img{
+    @include phones{
+        width: 6rem;
+        height: 8rem;
+    }
 }

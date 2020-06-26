@@ -5,11 +5,14 @@
     flex: 1;
     padding: 0 3%;
     
+    @include tablets{
+        margin-top: 1rem;
+    }
     @include phones{
-        margin-bottom: 3.1rem;
+        margin-bottom: 2rem;
         display: flex;
         
-        padding-right: 4rem
+        padding-right: 4rem;
     }
 }
 .benefit__title{
@@ -17,13 +20,13 @@
     font-family: 'AlegreyaSans-Bold';
     margin-top: 5px;
 }
-.hand{
-    top: 1.75rem‬;
-    left: 0;
-    position: relative;
-    height: 3.937rem;
-    width: 4.69rem;
-}
+//.hand{
+//    top: 1.75rem‬;
+//    left: 0;
+//    position: relative;
+//    height: 3.937rem;
+//    width: 4.69rem;
+//}
 .icon{
     
     top: 50%;
@@ -71,5 +74,5 @@
 .svg-wrapper{
     margin: auto;
     width: 4.4rem;
-    height: 4.4rem;
+    
 }

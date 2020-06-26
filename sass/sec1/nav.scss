@@ -1,6 +1,6 @@
 @import '../media';
 
-.menu{
+.header__menu{
     flex: 1;
     display: flex;
     justify-content: center;
@@ -27,11 +27,14 @@
     }
 }
 .svg-num{
-    
+    fill:#fff;
     margin: 7px 5px;
     margin-left: 0;
     width: 13px;
     height: 13px;
+}
+.color-svg{
+    fill:#365a49;
 }
 .number{
     display: inline-flex;

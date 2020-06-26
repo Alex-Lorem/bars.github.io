@@ -1,14 +1,24 @@
 .headline{
     margin: auto;
-    width: 25.625rem;
+    //width: 25.625rem;
     height: 7.5rem‬;
     margin-top: 6.56rem;
+    @include tablets{
+        margin-top: 0;
+    }
+    @include phones{
+       margin-top:5rem;
+    }
 }
 .headline__subtitle{
     font-family: 'AlegreyaSans-Regular';
+    padding: 0 31%;
     text-align: center;
     opacity: 0.5;
     margin-top: 0;
+    @include phones {
+        padding: 0 15%;
+    }
 }
 
 .section__title{
@@ -19,10 +29,10 @@
     font-family: 'AlegreyaSans-Bold';
     
     @include tablets{
-        margin-top: 14rem;
+        
     }
      @include phones{
-        margin-top: 0rem;
+       margin:0;
     }
 }
 .headline__title{
