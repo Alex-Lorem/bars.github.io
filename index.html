@@ -6,6 +6,27 @@
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <script>
+window.onload=function(){
+let burger  = document.querySelector('.burger');
+let overlay = document.querySelector('.overlay');
+let body = document.querySelector('body');
+
+let links = document.querySelectorAll('.menu__link');
+
+links.forEach(function(element){
+  element.addEventListener('click' , toggleMenu);
+})
+
+function toggleMenu(){
+  burger.classList.toggle('burger--active');
+  overlay.classList.toggle('overlay--active');
+  body.classList.toggle('body--active-menu');
+}
+
+burger.addEventListener('click' , toggleMenu);
+        }
+    </script>
 </head>
 <body>
     <div class="wrapper">
@@ -26,7 +47,7 @@
             
                 <div class="logo"><a href="" class=""><img src="./img/section_1/logo.png" alt="" class="pic">
                    </a></div>
-                  <ul class="menu">
+                  <ul class="header__menu">
                       <li><a href="" class="">О нас </a></li>
                     
                       <li><a href="" class="">Батончики</a></li>
@@ -45,18 +66,69 @@
                    <a href="tel:+788009039090" class="num">8 800 903 90 90</a></div>
                     
                      
-                   <a href="" class="hamburger">
-                       <span class="hamburger__plank"></span>
-                       <span class="hamburger__plank"></span>
-                       <span class="hamburger__plank"></span>
-                   </a>
+                   <div class="burger" id="burger">
+                       <span class="burger__line"></span>
+                       <span class="burger__line"></span>
+                       <span class="burger__line"></span>
+                   </div>
+                   
+                   
+                   <div class="overlay" id="overlay">
+                       <div class="overlay__menu" id="overlay__menu">
+                         <nav class="menu">
+                             <ul class="menu__list">
+                                 
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">
+                                        О нас
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">
+                                        Батончики
+                                    </a>
+                                </li> 
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">
+                                        Команда
+                                    </a>
+                                </li> 
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">
+                                        Меню
+                                    </a>
+                                </li> 
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">
+                                        Отзывы
+                                    </a>
+                                </li> 
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">
+                                        Как мы работаем
+                                    </a>
+                                </li> 
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">
+                                        Контакты
+                                    </a>
+                                </li> 
+                                 
+                             </ul>
+                         </nav>  
+                           
+                       </div>
+                   </div>
               </div>
         
             <div class="content">
+                <div class="phone--backgr">
+                    <img src="./img/section_1/back-img.png" alt="">
+                </div>
                 <h2 class="section__title1">НАТУРАЛЬНЫЕ ШОКОЛАДНЫЕ БАТОНЧИКИ</h2>
                 <p class="explain">Наши батончики идеально подходят для 
 тех, кто следит за своим здоровьем</p>
-                <div class="btn"><a href="" class="btn__link"><span class="btn-text">ЗАКАЗАТЬ</span><img src="" alt="" class="pic">
+                <div class="btn"><a href="" class="btn__link"><span class="btn-text">ЗАКАЗАТЬ</span>
                    </a>
                 </div>
                 <div class="descrpt">
@@ -219,9 +291,10 @@
         <div class="container container-center">
 
             <div class="sec4__title">ЗАКАЖИТЕ ДОСТАВКУ</div>
-            <div class="form-wrapper">
+            
             <form action="" class="form">
-                <div class="form__col ">
+               <div class="form-wrapper">
+                <div class="form__col">
                     <div class="form__row">
                         <label for="" class="form__block">
                             <div class="form__title">Имя</div>
@@ -275,13 +348,13 @@
                         </label>
                     </div>
                     <div class="form__controls">
-                        <label for="" class="radio">
+                        <label class="radio">
                             <input type="radio" name="option" id="" class="input">
                             <div class="radio__visible"></div>
                             <div class="radio__title">Потребуется сдача</div>
                             
                         </label>
-                        <label for="" class="radio">
+                        <label  class="radio">
                             <input type="radio" name="option" id="" class="input">
                             <div class="radio__visible"></div>
                             <div class="radio__title">Оплата по карте</div>
@@ -289,22 +362,23 @@
                         </label>
                     </div>
                     <div class="form__controls">
-                        <label for="" class="radio radio-checkbox">
+                        <label class="radio radio-checkbox">
                             <input type="checkbox" name="radio__elem" id="" class="input">
-                            <div class="radio__visible"></div>
+                            <div class="radio__visible-checkbox"></div>
                             <div class="radio__title">Не перезванивать</div>
                             
                         </label>
                     </div>
                 </div>
-
-            </form>
+                </div>
+            
             <div class="form__btns">
                 <input type="submit" value="Заказать" class=" btn-sec4 btn-text btn--green">
                 <input type="reset" value="Очистить" class="btn-sec4 btn-text btn--transparent">
             </div>
+            </form>
         </div>
-        </div>
+        
     </section>
     
     
@@ -317,7 +391,7 @@
             <div class="info">
                 <div class="address">Москва, ул.Новый Арбат, д.31/12</div>
                 <div class="footer-number">
-                    <div class="svg-num">
+                    <div class="svg-num color-svg">
                     <svg class="phone-icon" viewBox="0 0 401.998 401.998"><use xlink:href="sprite.svg#phone"></use></svg></div>
                     <a href="" class="num num-color">8 800 903 90 90</a></div>
             </div>
