@@ -10,11 +10,22 @@
     justify-content: center;
     align-items: center;
     background-color: #f8faf9;
+    @include tablets{
+        align-items: normal;
+    }
 }
 .arrow-svg-wrapper-1{
     transform: rotate(180deg);
     width: 30px;
+    
+    @include tablets{
+        width: 17px;
+    }
 }
 .arrow-svg-wrapper-2{
     width: 30px;
+    
+    @include tablets{
+        width: 17px;
+    }
 }

@@ -2,9 +2,23 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 100%;
+    height: 75%;
     font-family: 'AlegreyaSans-Regular';
     font-size: 1.13rem;
+    z-index: 10;
+    
+    @include tablets{
+        width: 100%;
+        height: 45%;
+    }
+}
+.slider__main-content{
+    @include tablets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        text-align: center;}
 }
 .drop{
     width: 5.6rem;
@@ -18,6 +32,9 @@
     &:hover .drop__content{
         display: table;
     }
+    @include tablets {
+        display: none;
+    }
 }
 .slider__title{
     font-family: 'AlegreyaSans-Bold';
@@ -27,28 +44,42 @@
 .slider__descrp{
     padding-right: 25%;
     opacity: 0.6;
+    
+    @include tablets {
+        padding: 0 8%;
+    }
 }
 .weight{
     margin-left: 15%;
-    
-    
+    text-align: left;
+}
+.calorie{
+    text-align: left;
 }
 .slider-list{
     display: flex;
-    padding: 50px 0;
+    width: 14rem;
+    justify-content: space-between;
+    margin: 8% 0;
+        
+        @include tablets {
+                margin-top: 3%;
+                margin-bottom: 6%;
+            }
 }
 .li-font{
     font-family: 'AlegreyaSans-Bold'; 
     
 }
 .slider__price{
+    display: flex;
     font-family: 'AlegreyaSans-Light';
     font-size: 3.75rem;
+    justify-content: space-between;
+    width: 20rem;
 }
 .slider-btn-position{
-    top: 64%;
-    left: 68%;
-    position: absolute;
+
     background: #365a49;
     color: #fff;
 }
@@ -66,9 +97,10 @@
     font-family: 'AlegreyaSans-Bold';
     font-size: 0.875rem;     
 }
-.slider-btn-hover{
+.slider-btn{
+        margin-top: 2%;
+    margin-left: 6%;
     
-
 }
 .drop__content{
     display: none;

@@ -12,10 +12,7 @@
     height: 11px;
     background-image:url('../img/section_4/checked.png');
     background-repeat: no-repeat;
-    position: absolute;
-    top: 29%;
-    left: 29%;
-    transfrom: translate(-50%, -50%);
+    transform: translate(40%, 50%);
     }
 }
 
@@ -69,10 +66,7 @@ input{
     height: 14px;
     background:#365a49;
     border-radius: 50%;
-    position: absolute;
-    top: 19%;
-    left: 16%;
-    transfrom: translate(-50%, -50%);
+    transform: translate(22%, 21%);
     }
 }
 .btn-sec4{
