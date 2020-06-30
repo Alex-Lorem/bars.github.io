@@ -6,30 +6,7 @@
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <script>
-//        const a = document.getquerySelector('a');
-//        a.addEventListener("click", e =>{
-//    e.preventDefault();}
-window.onload=function(){
-let burger  = document.querySelector('.burger');
-let overlay = document.querySelector('.overlay');
-let body = document.querySelector('body');
-
-let links = document.querySelectorAll('.menu__link');
-
-links.forEach(function(element){
-  element.addEventListener('click' , toggleMenu);
-})
-
-function toggleMenu(){
-  burger.classList.toggle('burger--active');
-  overlay.classList.toggle('overlay--active');
-  body.classList.toggle('body--active-menu');
-}
-
-burger.addEventListener('click' , toggleMenu);
-        }
-    </script>
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -241,7 +218,7 @@ burger.addEventListener('click' , toggleMenu);
 </section>
    
    <section class="slider">
-       <a href="#" class="slider__arrow"><div class="arrow-svg-wrapper-1"><svg class="" viewBox="0 0 14.2 25.5"><use xlink:href="sprite.svg#arrow"></use></svg></div></a>
+       <a href="#" class="slider__arrow-1"><div class="arrow-svg-wrapper-1"><svg class="" viewBox="0 0 14.2 25.5"><use xlink:href="sprite.svg#arrow"></use></svg></div></a>
        <div class="slider-container">
            <div class="slider__images">
                <img class="slider-img-1" src="img/section_6/bars.png" alt="">
@@ -309,19 +286,23 @@ burger.addEventListener('click' , toggleMenu);
                         <li class="li-font">95 грамм</li>
                     </ul>
                     </div>
-                    <div class="slider__price">140 ₽</div>
-                </div>
-                <div class="slider-btn">
+                    <div class="slider__price">
+                        <div class="slider__price-text">140 ₽</div>    
+                    <div class="slider-btn">
                     <a href="">
                         <span class="btn-text slider-btn-position btn--green">
                             ЗАКАЗАТЬ
                         </span>
                     </a>
+                    </div>
+                    
+                    </div>
                 </div>
+                
                 
            </div>
        </div>
-       <a href="#" class="slider__arrow"><div class="arrow-svg-wrapper-2"><svg class="" viewBox="0 0 14.2 25.5"><use xlink:href="sprite.svg#arrow"></use></svg></div></a>    
+       <a href="#" class="slider__arrow-2"><div class="arrow-svg-wrapper-2"><svg class="" viewBox="0 0 14.2 25.5"><use xlink:href="sprite.svg#arrow"></use></svg></div></a>    
        
        
    </section>
