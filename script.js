@@ -1,3 +1,6 @@
+document.addEventListener("DOMContentLoaded", function(event){
+                                  
+window.onload=function(){
 let burger  = document.querySelector('.burger');
 let overlay = document.querySelector('.overlay');
 let body = document.querySelector('body');
@@ -15,3 +18,6 @@ function toggleMenu(){
 }
 
 burger.addEventListener('click' , toggleMenu);
+        }
+
+});
