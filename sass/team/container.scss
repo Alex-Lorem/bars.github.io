@@ -1,0 +1,23 @@
+@import 'team-member';
+.spr-mrg{
+    margin-bottom: 7rem;
+    @include tablets{
+        margin-top: 13rem;
+        margin-bottom: 3rem;
+    }
+}
+.team__list{
+    display: flex;
+    justify-content: space-between;
+    @include tablets{
+        display: none;
+    }
+}
+.team__list-mobile{
+    display: none;
+    @include tablets{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

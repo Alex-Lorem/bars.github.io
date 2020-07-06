@@ -23,10 +23,8 @@
         }
     }
 }
-.phone--backgr{
+.phone-backgr{
     display: none;
-    width: 370px;
-    height: 370px;
     position: relative;
     top: -5%;
     left: 0;
@@ -34,4 +32,7 @@
     @include tablets{
         display: block;
     }
+}
+.phone-backgr-hero{
+    width: 100%;
 }

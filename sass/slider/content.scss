@@ -2,14 +2,15 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 75%;
+    height: 100%;
     font-family: 'AlegreyaSans-Regular';
     font-size: 1.13rem;
     z-index: 10;
-    
+    padding-left: 7%;
     @include tablets{
         width: 100%;
         height: 45%;
+        padding: 0;
     }
 }
 .slider__main-content{
@@ -23,7 +24,7 @@
 .drop{
     width: 5.6rem;
     height: 5.6rem;
-    margin-top: 44%;
+    margin-top: 37%;
     border-radius: 5px;
     background-color: #86c3d7;
     &:hover{
@@ -40,13 +41,17 @@
     font-family: 'AlegreyaSans-Bold';
     font-size: 2.25rem;
     padding: 5% 0;
+    padding-right: 6%;
+    @include tablets{
+        padding: 3% 0;
+    }
 }
 .slider__descrp{
     padding-right: 25%;
     opacity: 0.6;
     
     @include tablets {
-        padding: 0 8%;
+        padding: 0 12%;
     }
 }
 .weight{
@@ -64,7 +69,7 @@
         
         @include tablets {
                 margin-top: 3%;
-                margin-bottom: 6%;
+                margin-bottom: 5%;
             }
 }
 .li-font{
@@ -73,10 +78,13 @@
 }
 .slider__price{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     font-family: 'AlegreyaSans-Light';
     font-size: 3.75rem;
-    justify-content: space-between;
-    width: 20rem;
+    //justify-content: space-between;
+    
 }
 .slider-btn-position{
 
@@ -98,7 +106,7 @@
     font-size: 0.875rem;     
 }
 .slider-btn{
-        margin-top: 2%;
+        margin-top: 1%;
     margin-left: 6%;
     
 }

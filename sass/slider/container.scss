@@ -1,36 +1,49 @@
 .slider-container{
-    width: 100%;
-    margin: 0 5%;
+    min-width: 100%;
+    
+    
     position: relative;
     max-width:58.75rem;
     height: 100%;
     padding: 0 10px;
     display: flex;
-    
+    right: 0;
     @include tablets{
-        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 96vw;
+        padding: 0;
+        margin: 0;
+        
+    }
+}
+.slider-mobile-version{
+    
+    @include tablets {
+        margin-left: 50%;
     }
 }
 .slider__images{
     flex: 1;
     
     @include tablets{
-        display: block;
-        width: 100%;
-        height: 50%;
+        display: none;
+        //width: 100%;
+        //height: 50%;
     }
 }
 .slider-img-1{//bars
     z-index: 10;
     position: absolute;
-    top: 21.8%;
-    left: -3%;
+    top: 15%;
+    left: 2%;
     width: 25rem;
     height: 26.8rem;
     
     @include tablets{
-        left: 16%;
-        top: 5%;
+        left: 14%;
+        top: 4%;
     }
     @include phones {
         left: 0;
@@ -39,12 +52,12 @@
 }
 .slider-img-2{//blue elipse
     z-index: 1;
-    left: 0%;
+    left: 5%;
     top: 33.5%;
     position: absolute;
     
     @include tablets {
-    left: 19%;
+    left: 16%;
     top: 14%;
     }
     @include phones {
@@ -54,8 +67,8 @@
 }
 .slider-img-3{//gray elipse
     z-index: 0;
-    left: 0%;
-    top: 40%;
+    left: 3%;
+    top: 43%;
 
     position: absolute;
     
@@ -69,40 +82,105 @@
     }
 }
 .slider-img-4{//leaf
-    left: 31%;
-    top: 64%;
+    left: 41%;
+    top: 75%;
 
     position: absolute;
     
     @include tablets{
-        left: 75%;
+        left: 54%;
         top: 41%
     }
 }
 .slider-img-5{//leaf
     z-index: 0;
-    left: -10%;
-    top: 32%;
+    left: 0%;
+    top: 30%;
  
     position: absolute;
     
     @include tablets{
-        left: 0%;
-        top: 32%;
+        left: 5%;
+        top: 7%;
     }
     @include phones {
         left: -15%;
     }
 }
-.slider__arrow-1{
-    z-index: 1;
-    position: relative;
-    left: 5%;
-    margin-top: 35%;
+.slide-mobile-1, .slide-mobile-2{
+    display: none;
+    @include tablets{
+        margin-right: 5%;
+        display: block;
+    }
 }
-.slider__arrow-2{
-    z-index: 1;
-    position: relative;
-    right: 5%;
-    margin-top: 35%;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

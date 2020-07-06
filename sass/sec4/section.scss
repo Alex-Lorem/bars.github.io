@@ -9,9 +9,10 @@
     margin: 0 auto;
     //margin-top: 0px;
     font-family: 'AlegreyaSans-Bold';
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: #365a49;
     @include phones{
+        font-size: 3rem;
         padding: 0;
     }
 }

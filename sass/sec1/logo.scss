@@ -1,10 +1,11 @@
 
 .logo{
     position: relative;
+    left: 0;
     top: 1.6rem;
     width: 3.5rem;
-    margin-right: 3%;
     @include tablets{
-        margin-left: 2rem;
+        position: absolute;
+        left: 5%;
     }
 }

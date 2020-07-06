@@ -1,13 +1,17 @@
 .headline{
-    margin: auto;
+    
     //width: 25.625rem;
-    height: 7.5rem‬;
+    
     margin-top: 6.56rem;
     @include tablets{
         margin-top: 0;
     }
     @include phones{
        margin-top:5rem;
+    }
+    @include slippers{
+        margin-top: 3rem;
+        margin-bottom: 0;
     }
 }
 .headline__subtitle{

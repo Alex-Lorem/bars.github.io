@@ -21,7 +21,9 @@
     display: flex;
     justify-content: space-between;
     max-width: 58.75rem;
-    
+    @include tablets{
+        flex-direction: row;
+    }
     @include phones{
         flex-direction: column;
         align-items: center;

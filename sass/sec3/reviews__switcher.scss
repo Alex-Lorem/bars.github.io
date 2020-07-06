@@ -1,23 +1,10 @@
 .reviews__switcher{
+   
     display: flex;
     justify-content: space-around;
     width: 15.625rem;
     margin: 0 auto;
 }
-
-.interactive__avatar-link
-    {
-    display: block;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    overflow: hidden;
-        &:hover{
-            border:6px solid #365a49;
-    }
-    
-    
-    }   
 
 .interactive-avatar__img{
     display: block;
@@ -25,5 +12,22 @@
     height: 100%;
     object-fit: cover;
     
+    
 }
+
+.reviews__switcher-item{
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    display: block;
+    border: 5px solid transparent;
+    overflow: hidden;
+    &:hover{
+        border-color: #0f5a47;
+    }
+}
+.reviews__switcher-item.active{
+    border-color: #0f5a47;
+}
+
 

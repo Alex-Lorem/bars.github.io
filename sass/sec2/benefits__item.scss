@@ -9,10 +9,13 @@
         margin-top: 1rem;
     }
     @include phones{
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         display: flex;
         
         padding-right: 2rem;
+    }
+    @include slippers{
+        margin-bottom: 1rem;
     }
 }
 .benefit__title{
