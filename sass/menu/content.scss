@@ -1,0 +1,121 @@
+.sec-8__content{
+    display: flex;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    
+    
+}
+.sec-8__item{
+    overflow: hidden;
+    min-width: 5rem;
+    display: flex;
+    height: 100%;
+}
+.visible-part{
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    
+    @include tablets{
+        width: 7rem;
+        
+    }
+    @include phones {
+        width: 5rem;
+    }
+}
+.sec-8__image{
+    height: 100%;
+}
+
+.sec-8-title__item{
+    
+    transform: rotate(90deg);
+    top: 80%;
+    position: absolute;
+    color: #fff;
+    font-size: 3rem;
+}
+.hidden{
+    transition: width 1s;
+    position: relative;
+    overflow: hidden;
+    width: 0;
+    background-color: #3e4042;
+    max-width: 550px;
+    opacity: 0.9;
+    font-family: "Alegreya-Sans Regular";
+    font-size: 1.2rem;
+    color: #fff;
+}
+.sec-8__text{
+    max-width: 550px;
+    padding: 30px;
+    padding-top: 65px;
+    padding-right: 75px;
+    @include tablets{
+        padding-right: 55px;
+    }
+    @include phones{
+        padding-right: 30px;
+    }
+}
+.sec-8-close{
+    position: absolute;
+    left: 94%;
+    top: 4%;
+    @include slippers{
+        top: 2%;
+    }
+}
+.close-line{
+    width: 3px;
+    height: 20px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    //transform: translate(50%, -50%) rotate(45deg);
+
+    &:nth-child(1){
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+     &:nth-child(2){
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

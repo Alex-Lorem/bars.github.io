@@ -3,6 +3,9 @@
     margin-left: 1rem;
     &:first-child{
         margin-left: 0;
+        @include tablets{
+            margin-left: 1rem;
+        }
     }
 }
 .team__item{

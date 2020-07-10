@@ -1,0 +1,26 @@
+@import 'content';
+
+.menu-background{
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.img-inner{
+    width: 100%;
+    height: 100%;
+}
+.sec-8__title{
+    font-family: 'AlegreyaSans-Bold';
+    font-size: 6rem;
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    @include tablets{
+        left: 2%;
+        font-size: 3rem;
+    }
+    
+}
+

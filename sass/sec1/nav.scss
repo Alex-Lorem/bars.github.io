@@ -3,7 +3,7 @@
 .header__menu{
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     position: relative;
     height: 5.43rem;
     font-size: 1.2rem;
@@ -13,11 +13,12 @@
         display: none;
     } 
     .li-last{
-        margin-right: 3rem;
+        margin-right: 1rem;
     }
-    li{
-        margin-right: 2.6rem;
+    .li{
+        margin-right: 5px;
     }
+    
     a {
     position: relative;
     white-space: nowrap;

@@ -1,12 +1,12 @@
 .fixed-menu{
     position: fixed;
-    top: 21%;
+    top: 17%;
     right: 15%;
     z-index: 100;
 }
 .fixed-menu__item{
     margin-bottom: 5px;
-    &--active{
+    &:hover{
         .fixed-menu__link{
             border-color:#fff;
         }
