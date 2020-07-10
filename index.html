@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript">
+    </script>
     <script src="script.js"></script>
 </head>
 <body>
     <div class="wrapper">
-       <section class="hero">
+      <div class="maincontent">
+        <section data-sec-id="hero" class="section hero">
                    <div class="images">
                     <div class="berries1"></div>
                     <div class="berries2"></div>
@@ -137,8 +139,7 @@
         
         
     </section>
-    
-    <section class="section">
+        <section data-sec-id="benefits" class="section">
           <div class="pattern"></div>
           <div class="raspberry"></div>
         
@@ -219,8 +220,7 @@
     </div>
                   
 </section>
-   
-   <section class="slider">
+        <section data-sec-id="slider" class="section slider">
        <a href="#" class="slider__arrow-1" id="arrow-left"><div class="arrow-svg-wrapper-1"><svg class="" viewBox="0 0 14.2 25.5"><use xlink:href="sprite.svg#arrow"></use></svg></div></a>
        
      <div class="slider__track">
@@ -413,7 +413,7 @@
        
        
    </section>
-   <section class="section">
+        <section data-sec-id="team" class="section">
        <div class="container">
            <div class="section__title spr-mrg">КОМАНДА</div>
            <ul class="team__list">
@@ -558,7 +558,61 @@
        </div>
        
    </section>
-    <section class="section">
+        <section data-sec-id="menu" class="section">
+       <div class="menu-background"><img src="./img/section_8/background.jpg" alt="" class="img-inner"></div>
+       <div class="sec-8__title">Меню</div>
+       <div class="sec-8__content">
+           <div class="sec-8__item">
+               <div class="visible-part">
+                   <h2 class="sec-8-title__item"><span>Батончики с молоком</span></h2>
+                   <img src="./img/section_8/img-1.jpg" alt="" class="sec-8__image">
+               </div>
+               <div class="hidden">
+               <div class="sec-8__text">
+                   Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. 
+                   Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. 
+               </div>
+               <div class="sec-8-close">
+                   <div class="close-line"></div>
+                   <div class="close-line"></div>
+               </div>
+               </div>
+           </div>
+           <div class="sec-8__item">
+                <div class="visible-part">
+                   <div class="sec-8-title__item">С медом и фруктами</div>
+                   <img src="./img/section_8/img-2.jpg" alt="" class="sec-8__image">
+               </div>
+               <div class="hidden">
+               <div class="sec-8__text">
+                   Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. 
+                   Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.
+               </div>
+               <div class="sec-8-close">
+                   <div class="close-line"></div>
+                   <div class="close-line"></div>
+               </div>
+               </div>
+           </div>
+           <div class="sec-8__item">
+               <div class="visible-part">
+                   <div class="sec-8-title__item">Дикие ягоды</div>
+                   <img src="./img/section_8/img-3.jpg" alt="" class="sec-8__image">
+               </div>
+               <div class="hidden">
+               <div class="sec-8__text">
+                   Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. 
+                   Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.
+               </div>
+               <div class="sec-8-close">
+                   <div class="close-line"></div>
+                   <div class="close-line"></div>
+               </div>
+               </div>
+           </div>
+       </div>
+   </section>
+        <section data-sec-id="reviews" class="section">
       <div class="strawberry"><img src="./img/section_3/strawberry.png" alt="" class="strawberry-img"></div>
           <div class="berries-sec3"><img src="./img/section_3/berries.png" alt="" class="berry-img"></div>
           <div class="pattern-sec3"><img src="./img/section_3/pattern.png" alt="" class="pattern-img"></div>
@@ -644,7 +698,7 @@
         
         
     </section>
-    <section class="section delivery">
+        <section data-sec-id="order" class="section delivery">
            <div class="blueberry-sec4"></div>
            <div class="leaf-sec4"></div>
         <div class="container container-center">
@@ -663,7 +717,7 @@
                         </label>
                         <label for="" class="form__block">
                             <div class="form__title">Телефон</div>
-                            <input type="text" class="form__input" name="phone">
+                            <input type="text" class="form__input" name="phone" required>
                             <div class="error"></div>
                         </label>
                     </div>
@@ -702,8 +756,8 @@
                     <div class="form__row">
                         <label for="" class="form__block">
                             <div class="form__title">Комментарий</div>
-                            <textarea name="comment" id="" class="textarea form__input "></textarea>
-                            
+                            <textarea name="comment" id="" class="textarea form__input " required></textarea>
+                            <div class="error"></div>
                             
                         </label>
                     </div>
@@ -735,18 +789,21 @@
             <div class="form__btns">
                 <input type="submit" value="Заказать" class=" btn-sec4 btn-text btn--green" id="send">
                 <input type="reset" value="Очистить" class="btn-sec4 btn-text btn--transparent">
+                <div class="modal" id="modal">
+                    <div class="modalText" id="modalText">
+                        
+                    </div>
+                </div>
             </div>
             </form>
         </div>
         
     </section>
-    
-    
-    <section class="section map">
-        <div class="sec5-background"></div>
+        <section data-sec-id="map" class="section ">
+        <div id="map"></div>
         
     </section> 
-    <footer class="footer">
+        <footer class="footer">
         <div class="container container--footer">
             <div class="info">
                 <div class="address">Москва, ул.Новый Арбат, д.31/12</div>
@@ -772,13 +829,18 @@
             
         </div>
     </footer>
+      </div>
     </div>
     <nav class="fixed-menu">
         <ul class="fixed-menu__list">
-            <li class="fixed-menu__item fixed-menu__item--active"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="hero"></a></li>
+            <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="benefits"></a></li>
+            <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="slider"></a></li>
+            <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="team"></a></li>
+            <li class="fixed-menu__item fixed-menu__item--active"><a href="" class="fixed-menu__link" data-scroll-to="menu"></a></li>
+            <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="reviews"></a></li>
+            <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="order"></a></li>
+            <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="map"></a></li>
         </ul>
     </nav>
 </body>
