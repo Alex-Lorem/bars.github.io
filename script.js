@@ -3,7 +3,7 @@
 
 
 
-    document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function(event) {
  //burger                                 
 window.onload=function(){
 let burger  = document.querySelector('.burger');
@@ -273,19 +273,44 @@ const performTransition = sectionEq =>{
     if(inScroll==false){
     inScroll = true;
     var position = 0;
+    const sideMenu = $(".fixed-menu");
     if(sectionEq>7){
-        position = sectionEq * 0;
+        sectionEq = 0
+        position = sectionEq * -100;
     }else{
         position = sectionEq * -100;
     }
+            
+        
+    const currentSection = sections.eq(sectionEq);
+    const menuTheme = currentSection.attr("data-theme");
+    const fixedlink = $(".fixed-menu__link");
+        
+        if(menuTheme == "black"){
+            fixedlink.addClass("shadowed");
+        } else {
+            fixedlink.removeClass("shadowed");
+        }
     display.css({
         transform: `translateY(${position}%)`
     });
     sections.eq(sectionEq).addClass("scroll-active").siblings().removeClass("scroll-active");
-        
+    
+    
     setTimeout(()=>{
         inScroll = false;
-        },1300);
+
+        sideMenu
+            .find(".fixed-menu__link")
+            .eq(sectionEq)
+            .addClass("fixed-menu__link--active")
+            .siblings()
+            .removeClass("fixed-menu__link--active");
+        
+        },1000);
+        
+         
+        
     }
 }
 const scrollViewport = direction => {
@@ -327,6 +352,14 @@ $(window).on("keydown", e=>{
             break;
     }}
 });
+    
+        
+        
+        
+           
+        
+        
+        
 
 //fixed menu
 
@@ -360,6 +393,149 @@ $("[data-scroll-to]").click(e =>{
             $(item).css('border-color','white');
         }
 
+//player
+let player;
+const playerContainer = $('.player');
+const playerStart = $('.player__start');
+const volumeBtn = $(".volume__pic");
+
+
+let eventsInit = () => {
+    $(".player__start").click(e => {
+        e.preventDefault();
+
+        const btn = $(e.currentTarget);
+
+        if (playerStart.hasClass("player--paused")){
+
+            
+            player.pauseVideo();
+
+        }else{
+            
+            player.playVideo();
+        }
+        
+        onPlayerReady();
+    });
+
+    $(".player__playback").click(e => {
+        const bar = $(e.currentTarget);
+        const clickedPosition = e.originalEvent.layerX;
+        const newButtonPositionPercent = (clickedPosition / bar.width()) * 100;
+        const newPlaybackPositionSec = 
+            (player.getDuration() / 100) * newButtonPositionPercent;
+
+
+        $(".player__playback-button").css({
+            left: `${newButtonPositionPercent}%`
+        });
+
+        player.seekTo(newPlaybackPositionSec);
+    });
+
+    $(".player__splash").click(e => {
+        player.playVideo();
+    });
+
+
+    $(".volume__pic").click(e => {
+        e.preventDefault();
+
+        if (volumeBtn.hasClass("volume__pic--nosound")){
+
+            player.unMute();
+            volumeBtn.removeClass("volume__pic--nosound");
+
+        }else{
+            
+            player.mute();
+            volumeBtn.addClass("volume__pic--nosound");
+        }
+    });
+
+    $(".volume__playback").click(e => {
+
+        const barVolume = $(e.currentTarget);
+        const clickedPositionVolume = e.originalEvent.layerX;
+        const newVolumeButtonPositionPercent = (clickedPositionVolume / barVolume.width()) * 100;
+        let volumePoint = player.getVolume();
+    
+    
+        $(".volume__playback-button").css({
+            left: `${newVolumeButtonPositionPercent}%`
+        });
+
+        player.setVolume(newVolumeButtonPositionPercent);
+        
+    });
+
+    
+};
+
+
+const onPlayerReady = () => {
+    let interval;
+    const durationSec = player.getDuration();
+
+    if (typeof interval !== "undefined"){
+        clearInterval(interval);
+    }
+
+    interval = setInterval(() => {
+        const completedSec = player.getCurrentTime();
+        const completedPercent = (completedSec / durationSec) * 100;
+
+        $(".player__playback-button").css({
+            left: `${completedPercent}%`
+        });
+
+    }, 1000);
+};
+
+
+const onPlayerStateChange = event => {
+    switch(event.data){
+        case 1:
+            playerContainer.addClass("active");
+            playerStart.addClass("player--paused");
+            break;
+        case 2:
+            playerContainer.removeClass("active");
+            playerStart.removeClass("player--paused");
+            break;
+    }
+}
+
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('yt-player', {
+        height: '405',
+        width: '660',
+        videoId: 'LXb3EKWsInQ',
+        events:{
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+        },
+        playerVars: {
+            controls: 0,
+            disablekb: 0,
+            showinfo: 0,
+            rel: 0,
+            autoplay: 0,
+            modesbranding: 0
+        }
+    })
+};
+
+
+eventsInit();
+     
+        
+        
+        
+        
+        
+        
         
         
         
@@ -368,23 +544,23 @@ let myMap;
 
 const init = () =>{
     myMap = new ymaps.Map("map",{
-    center: [55.755, 37.60],
-    zoom:14.5,
+    center: [55.755,37.60],
+    zoom:14,
     controls:[]
 });
     
    const points = [
-       [37.5814, 55.7429],
-       [37.58289,55.758858],
-       [37.604427,55.749823],
-       [37.620551,55.757818]
+       [55.7429,37.5814],
+       [55.758858,37.58289],
+       [55.749823,37.604427],
+       [55.757818,37.620551]
    ];
     
     const myCollection = new ymaps.GeoObjectCollection({},{
         draggable:false,
         iconLayout: 'default#image',
-        iconImageHref:'./img/section_5/point.jpg',
-        iconImageSize: [30, 42],
+        iconImageHref:'./img/section_5/point.png',
+        iconImageSize: [35, 47],
         iconImageOffset: [-3, -42]
     });
     
@@ -393,7 +569,7 @@ const init = () =>{
     })
     
     myMap.geoObjects.add(myCollection);
-    myMap.behaviors.disable('scrollZoom');
+    //myMap.behaviors.disable('scrollZoom');
 }
         
 ymaps.ready(init);

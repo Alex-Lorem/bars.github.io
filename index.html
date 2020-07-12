@@ -7,15 +7,18 @@
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript">
     </script>
+    
     <script src="script.js"></script>
+    
 </head>
 <body>
     <div class="wrapper">
       <div class="maincontent">
-        <section data-sec-id="hero" class="section hero">
+        <section data-theme="white" data-sec-id="hero" class="section hero scroll-active">
                    <div class="images">
                     <div class="berries1"></div>
                     <div class="berries2"></div>
@@ -113,7 +116,7 @@
                 <h2 class="section__title1">НАТУРАЛЬНЫЕ ШОКОЛАДНЫЕ БАТОНЧИКИ</h2>
                 <p class="explain">Наши батончики идеально подходят для 
 тех, кто следит за своим здоровьем</p>
-                <div class="btn"><a href="" class="btn__link"><span class="btn-text">ЗАКАЗАТЬ</span>
+                <div class="btn"><a href="" class="btn__link" data-scroll-to="order"><span class="btn-text">ЗАКАЗАТЬ</span>
                    </a>
                 </div>
                 <div class="descrpt">
@@ -139,7 +142,7 @@
         
         
     </section>
-        <section data-sec-id="benefits" class="section">
+        <section data-theme="black" data-sec-id="benefits" class="section">
           <div class="pattern"></div>
           <div class="raspberry"></div>
         
@@ -220,7 +223,7 @@
     </div>
                   
 </section>
-        <section data-sec-id="slider" class="section slider">
+        <section data-theme="black" data-sec-id="slider" class="section slider">
        <a href="#" class="slider__arrow-1" id="arrow-left"><div class="arrow-svg-wrapper-1"><svg class="" viewBox="0 0 14.2 25.5"><use xlink:href="sprite.svg#arrow"></use></svg></div></a>
        
      <div class="slider__track">
@@ -413,7 +416,8 @@
        
        
    </section>
-        <section data-sec-id="team" class="section">
+        <section data-theme="black" data-sec-id="team" class="section">
+        <img src="./img/section_7/berry.png" alt="" class="team__berry">
        <div class="container">
            <div class="section__title spr-mrg">КОМАНДА</div>
            <ul class="team__list">
@@ -558,8 +562,9 @@
        </div>
        
    </section>
-        <section data-sec-id="menu" class="section">
+        <section data-theme="white" data-sec-id="menu" class="section">
        <div class="menu-background"><img src="./img/section_8/background.jpg" alt="" class="img-inner"></div>
+       
        <div class="sec-8__title">Меню</div>
        <div class="sec-8__content">
            <div class="sec-8__item">
@@ -612,7 +617,7 @@
            </div>
        </div>
    </section>
-        <section data-sec-id="reviews" class="section">
+        <section data-theme="black" data-sec-id="reviews" class="section">
       <div class="strawberry"><img src="./img/section_3/strawberry.png" alt="" class="strawberry-img"></div>
           <div class="berries-sec3"><img src="./img/section_3/berries.png" alt="" class="berry-img"></div>
           <div class="pattern-sec3"><img src="./img/section_3/pattern.png" alt="" class="pattern-img"></div>
@@ -698,7 +703,42 @@
         
         
     </section>
-        <section data-sec-id="order" class="section delivery">
+        
+           
+     <section class="section video">
+            <img src="./img/section_9/leaf-1.png" alt="" class="player-img-1">
+            <img src="./img/section_9/leaf-2.png" alt="" class="player-img-2">
+            <img src="./img/section_9/blackberry.png" alt="" class="player-img-3">
+   <div class="container video-container">
+     <h2 class="section__title">Как мы работаем</h2>
+     <div class="player">
+        <div class="player__wrapper">
+          <div id="yt-player" class="player__elem"></div>
+          <div class="player__splash">
+            <img src="./img/section_9/splash.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="player__controls">
+          <button class="player__start"></button>
+          <div class="player__playback">
+            <button class="player__playback-button"></button>
+          </div>
+          <div class="player__volume">
+            <button class="volume__pic"></button>
+            <div class="volume__playback">
+              <button class="volume__playback-button"></button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+  </div>
+</section>
+      
+            
+            
+        <section data-theme="white" data-sec-id="order" class="section delivery">
            <div class="blueberry-sec4"></div>
            <div class="leaf-sec4"></div>
         <div class="container container-center">
@@ -799,7 +839,7 @@
         </div>
         
     </section>
-        <section data-sec-id="map" class="section ">
+        <section data-theme="black" data-sec-id="map" class="section ">
         <div id="map"></div>
         
     </section> 
@@ -831,9 +871,9 @@
     </footer>
       </div>
     </div>
-    <nav class="fixed-menu">
+    <nav class="fixed-menu shadowed">
         <ul class="fixed-menu__list">
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="hero"></a></li>
+            <li class="fixed-menu__item"><a href="" class="fixed-menu__link fix-active" data-scroll-to="hero"></a></li>
             <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="benefits"></a></li>
             <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="slider"></a></li>
             <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="team"></a></li>
