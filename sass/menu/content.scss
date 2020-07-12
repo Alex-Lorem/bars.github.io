@@ -31,8 +31,10 @@
 
 .sec-8-title__item{
     
-    transform: rotate(90deg);
-    top: 80%;
+    transform: translate(27%, 748%) rotate(90deg);
+    transform-origin: 0 0;
+    top: 0%;
+    white-space: nowrap;
     position: absolute;
     color: #fff;
     font-size: 3rem;

@@ -1,11 +1,16 @@
 .fixed-menu{
+    
     position: fixed;
     top: 17%;
     right: 15%;
     z-index: 100;
+    
+    
 }
+
 .fixed-menu__item{
     margin-bottom: 5px;
+    
     &:hover{
         .fixed-menu__link{
             border-color:#fff;
@@ -32,4 +37,12 @@
         left: 50%;
         transform:translate(-50%, -50%);
     }
+    }
+fixed-menu__link--active{
+    border-color: white;
 }
+.shadowed {
+    
+   
+}
+    
