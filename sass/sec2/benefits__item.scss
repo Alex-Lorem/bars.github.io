@@ -9,10 +9,10 @@
         margin-top: 1rem;
     }
     @include phones{
-        margin-bottom: 3rem;
+        justify-content: space-between;
         display: flex;
         
-        padding-right: 2rem;
+        
     }
     @include slippers{
         margin-bottom: 1rem;

@@ -2,21 +2,25 @@
     
     position: fixed;
     top: 17%;
-    right: 15%;
+    right: 5%;
     z-index: 100;
     
-    
+    @include tablets{
+        display: none;
+    }
 }
 
 .fixed-menu__item{
     margin-bottom: 5px;
+}
     
-    &:hover{
         .fixed-menu__link{
-            border-color:#fff;
-        }
-}
-}
+            &:hover{
+                border-color:#fff;
+            }
+    }
+
+
 .fixed-menu__link{
     width: 16px;
     height: 16px;
@@ -38,11 +42,17 @@
         transform:translate(-50%, -50%);
     }
     }
-fixed-menu__link--active{
-    border-color: white;
-}
+
 .shadowed {
-    
-   
+    .fixed-menu__link{
+        &:hover{
+            border-color: black;
+        }
+    }
+    .fixed-menu__link{
+        &:before{
+            background: black;
+        }    
+    }
 }
     

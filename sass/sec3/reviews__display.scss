@@ -27,13 +27,12 @@
 
 .reviews{ 
     width: 100%;
-    height: 30%;
+    height: 65%;
     margin-top: 6rem;
-    margin-bottom: 5rem;
+    
     
     @include tablets{
         margin: 0 auto;
-        margin-bottom: 14rem;
     }
 }
 .reviews__title{
@@ -87,9 +86,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        //background-size: 100%;
         
-        margin-bottom: 4rem;
         
     }
 }

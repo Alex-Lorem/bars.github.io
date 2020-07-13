@@ -31,13 +31,22 @@
 
 .sec-8-title__item{
     
-    transform: translate(27%, 748%) rotate(90deg);
+    transform: translate(9%, 0%) rotate(-90deg);
     transform-origin: 0 0;
-    top: 0%;
+    top: 88%;
     white-space: nowrap;
     position: absolute;
     color: #fff;
     font-size: 3rem;
+    @include phones {
+        transform: translate(3%, 0%) rotate(-90deg);
+}
+}
+.special{
+    transform: translate(14%, 0%) rotate(-90deg);
+    @include phones {
+        transform: translate(3%, 0%) rotate(-90deg);
+}
 }
 .hidden{
     transition: width 1s;
@@ -60,7 +69,7 @@
         padding-right: 55px;
     }
     @include phones{
-        padding-right: 30px;
+        padding: 10px;
     }
 }
 .sec-8-close{

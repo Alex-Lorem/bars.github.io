@@ -2,13 +2,13 @@
     display: flex;
     
    
-    margin-top: 12rem;
+    margin-top: 7rem;
     @include tablets{
-        margin-top: 1rem;
-        flex-direction: column;
+        margin-top: 2rem;
     }
     @include phones{
-       margin-top:2rem;
+       height: 70%;
+        flex-direction: column;
     }
 }
 .ball{
@@ -26,5 +26,8 @@
     @include phones{
         display: none;
     }
+}
+.justify{
+    justify-content: center;
 }
 

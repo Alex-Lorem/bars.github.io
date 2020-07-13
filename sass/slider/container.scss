@@ -23,6 +23,9 @@
     @include tablets {
         margin-left: 50%;
     }
+    @include slippers{
+        margin-left: 58%;
+    }
 }
 .slider__images{
     flex: 1;

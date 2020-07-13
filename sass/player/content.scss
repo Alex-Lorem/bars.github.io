@@ -2,17 +2,27 @@
     position: absolute;
     top: 75%;
     left: 10%;
+    @include phones {
+        display: none;
+    }
 }
 .player-img-2{
     position: absolute;
     top: 20%;
     left: 75%;
+    @include phones{
+        display: none;
+    }
 }
 .player-img-3{
-    left: 75%;
-    top: 84%;
+    right: 0;
+    top: 82%;
     z-index: 10;
     position: absolute;
+    
+    @include phones {
+        width: 35%;
+    }
 }
 .video {
   position: relative;

@@ -34,9 +34,6 @@
     background: url('../img/section_2/raspberry.png');
     background-repeat: no-repeat;
     
-    @include tablets{
-        top: 35%;
-    }
     @include phones{
         display: none;
     }
