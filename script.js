@@ -140,7 +140,7 @@ rightBtn.addEventListener('click', e =>{
         const reqWidth = mesureWidth(item);
         container.addClass("item-active");
         items.width(reqWidth);
-        text.width(reqWidth-55-30);
+        text.width(reqWidth-55);//-30
     };
     
     const closeEveryItems = (container) =>{
@@ -258,7 +258,9 @@ rightBtn.addEventListener('click', e =>{
 
 
 
-        
+$(".slider-btn-hover").click((e)=>{
+           e.preventDefault();
+});       
         
 ///////scroll
         
@@ -274,7 +276,7 @@ const performTransition = sectionEq =>{
     inScroll = true;
     var position = 0;
     const sideMenu = $(".fixed-menu");
-    if(sectionEq>7){
+    if(sectionEq>8){
         sectionEq = 0
         position = sectionEq * -100;
     }else{
@@ -284,7 +286,7 @@ const performTransition = sectionEq =>{
         
     const currentSection = sections.eq(sectionEq);
     const menuTheme = currentSection.attr("data-theme");
-    const fixedlink = $(".fixed-menu__link");
+    const fixedlink = $(".fixed-menu");
         
         if(menuTheme == "black"){
             fixedlink.addClass("shadowed");
@@ -307,7 +309,7 @@ const performTransition = sectionEq =>{
             .siblings()
             .removeClass("fixed-menu__link--active");
         
-        },1000);
+        },1300);
         
          
         
@@ -390,7 +392,12 @@ $("[data-scroll-to]").click(e =>{
         
         const openFixItem = (item) =>{
             item.addClass("fix-active");
+            const activecolor = $(".fixed-menu");
+            if(activecolor.hasClass("shadowed")){
+                $(item).css('border-color','black');
+            } else{
             $(item).css('border-color','white');
+            }
         }
 
 //player
