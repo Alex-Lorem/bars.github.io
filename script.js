@@ -4,6 +4,14 @@
 
 
 document.addEventListener("DOMContentLoaded", function(event) {
+ 
+
+    
+    
+    
+    
+    
+    
  //burger                                 
 window.onload=function(){
 let burger  = document.querySelector('.burger');
@@ -285,13 +293,16 @@ const performTransition = sectionEq =>{
             
         
     const currentSection = sections.eq(sectionEq);
+    const burgercolor = $(".burger");
     const menuTheme = currentSection.attr("data-theme");
     const fixedlink = $(".fixed-menu");
         
         if(menuTheme == "black"){
             fixedlink.addClass("shadowed");
+            burgercolor.addClass("shadowed");
         } else {
             fixedlink.removeClass("shadowed");
+            burgercolor.removeClass("shadowed");
         }
     display.css({
         transform: `translateY(${position}%)`
@@ -302,12 +313,7 @@ const performTransition = sectionEq =>{
     setTimeout(()=>{
         inScroll = false;
 
-        sideMenu
-            .find(".fixed-menu__link")
-            .eq(sectionEq)
-            .addClass("fixed-menu__link--active")
-            .siblings()
-            .removeClass("fixed-menu__link--active");
+        sideMenu.find(".fixed-menu__link").eq(sectionEq).addClass("fixed-menu__link--active").siblings().removeClass("fixed-menu__link--active");
         
         },1300);
         
@@ -401,125 +407,214 @@ $("[data-scroll-to]").click(e =>{
         }
 
 //player
+//let player;
+//const playerContainer = $('.player');
+//const playerStart = $('.player__start');
+//const volumeBtn = $(".volume__pic");
+//
+//
+//let eventsInit = () => {
+//    $(".player__start").click(e => {
+//        e.preventDefault();
+//
+//        const btn = $(e.currentTarget);
+//
+//        if (playerStart.hasClass("player--paused")){
+//
+//            
+//            player.pauseVideo();
+//
+//        }else{
+//            
+//            player.playVideo();
+//        }
+//        
+//        onPlayerReady();
+//    });
+//
+//    $(".player__playback").click(e => {
+//        const bar = $(e.currentTarget);
+//        const clickedPosition = e.originalEvent.layerX;
+//        const newButtonPositionPercent = (clickedPosition / bar.width()) * 100;
+//        const newPlaybackPositionSec = 
+//            (player.getDuration() / 100) * newButtonPositionPercent;
+//
+//
+//        $(".player__playback-button").css({
+//            left: `${newButtonPositionPercent}%`
+//        });
+//
+//        player.seekTo(newPlaybackPositionSec);
+//    });
+//
+//    $(".player__splash").click(e => {
+//        player.playVideo();
+//    });
+//
+//
+//    $(".volume__pic").click(e => {
+//        e.preventDefault();
+//
+//        if (volumeBtn.hasClass("volume__pic--nosound")){
+//
+//            player.unMute();
+//            volumeBtn.removeClass("volume__pic--nosound");
+//
+//        }else{
+//            
+//            player.mute();
+//            volumeBtn.addClass("volume__pic--nosound");
+//        }
+//    });
+//
+//    $(".volume__playback").click(e => {
+//
+//        const barVolume = $(e.currentTarget);
+//        const clickedPositionVolume = e.originalEvent.layerX;
+//        const newVolumeButtonPositionPercent = (clickedPositionVolume / barVolume.width()) * 100;
+//        let volumePoint = player.getVolume();
+//    
+//    
+//        $(".volume__playback-button").css({
+//            left: `${newVolumeButtonPositionPercent}%`
+//        });
+//
+//        player.setVolume(newVolumeButtonPositionPercent);
+//        
+//    });
+//
+//    
+//};
+//
+//
+//const onPlayerReady = () => {
+//    let interval;
+//    const durationSec = player.getDuration();
+//
+//    if (typeof interval !== "undefined"){
+//        clearInterval(interval);
+//    }
+//
+//    interval = setInterval(() => {
+//        const completedSec = player.getCurrentTime();
+//        const completedPercent = (completedSec / durationSec) * 100;
+//
+//        $(".player__playback-button").css({
+//            left: `${completedPercent}%`
+//        });
+//
+//    }, 1000);
+//};
+//
+//
+//const onPlayerStateChange = event => {
+//    switch(event.data){
+//        case 1:
+//            playerContainer.addClass("active");
+//            playerStart.addClass("player--paused");
+//            break;
+//        case 2:
+//            playerContainer.removeClass("active");
+//            playerStart.removeClass("player--paused");
+//            break;
+//    }
+//}
+//
+//function onYouTubeIframeAPIReady() {
+//    player = new YT.Player('yt-player', {
+//        height: '405',
+//        width: '660',
+//        videoId: 'LXb3EKWsInQ',
+//        events:{
+//            'onReady': onPlayerReady,
+//            'onStateChange': onPlayerStateChange
+//        },
+//        playerVars: {
+//            controls: 0,
+//            disablekb: 0,
+//            showinfo: 0,
+//            rel: 0,
+//            autoplay: 0,
+//            modesbranding: 0
+//        }
+//    })
+//};
+//
+//
+//eventsInit();
+     
+        
+        
+ //player_2
 let player;
 const playerContainer = $('.player');
-const playerStart = $('.player__start');
-const volumeBtn = $(".volume__pic");
-
-
-let eventsInit = () => {
-    $(".player__start").click(e => {
+let eventInit = () => {
+    $('.player__start').click(e => {
         e.preventDefault();
-
-        const btn = $(e.currentTarget);
-
-        if (playerStart.hasClass("player--paused")){
-
-            
+        if (playerContainer.hasClass('paused')) {
             player.pauseVideo();
-
-        }else{
-            
+        } else {
             player.playVideo();
         }
-        
-        onPlayerReady();
-    });
-
-    $(".player__playback").click(e => {
+    })
+    $('.player__playback').click(e => {
         const bar = $(e.currentTarget);
-        const clickedPosition = e.originalEvent.layerX;
-        const newButtonPositionPercent = (clickedPosition / bar.width()) * 100;
-        const newPlaybackPositionSec = 
-            (player.getDuration() / 100) * newButtonPositionPercent;
-
-
-        $(".player__playback-button").css({
-            left: `${newButtonPositionPercent}%`
+        const clickPosition = e.originalEvent.layerX;
+        const newbuttonPosition = (clickPosition / bar.width()) * 100;
+        const newPlaybackPositionSec = (player.getDuration() / 100) * newbuttonPosition;
+        $('.player__playback-botton').css({
+            left: `${newbuttonPosition}%`
         });
-
-        player.seekTo(newPlaybackPositionSec);
+        player.seekTo(newPlaybackPositionSec)
     });
-
-    $(".player__splash").click(e => {
-        player.playVideo();
-    });
-
-
-    $(".volume__pic").click(e => {
+    $('.player__splash').click(e => {
         e.preventDefault();
-
-        if (volumeBtn.hasClass("volume__pic--nosound")){
-
-            player.unMute();
-            volumeBtn.removeClass("volume__pic--nosound");
-
-        }else{
-            
-            player.mute();
-            volumeBtn.addClass("volume__pic--nosound");
-        }
-    });
-
-    $(".volume__playback").click(e => {
-
-        const barVolume = $(e.currentTarget);
-        const clickedPositionVolume = e.originalEvent.layerX;
-        const newVolumeButtonPositionPercent = (clickedPositionVolume / barVolume.width()) * 100;
-        let volumePoint = player.getVolume();
-    
-    
-        $(".volume__playback-button").css({
-            left: `${newVolumeButtonPositionPercent}%`
-        });
-
-        player.setVolume(newVolumeButtonPositionPercent);
-        
-    });
-
-    
+        player.playVideo();
+    })
 };
-
-
+const formatTime = timeSec => {
+    const roundTime = Math.round(timeSec);
+    const munutes = addZero(Math.floor(roundTime / 60));
+    const seconds = addZero(roundTime - munutes * 60);
+    function addZero(num) {
+        return num < 10 ? `0${num}` : num;
+    }
+    return `${munutes} : ${seconds}`;
+}
 const onPlayerReady = () => {
     let interval;
     const durationSec = player.getDuration();
-
-    if (typeof interval !== "undefined"){
+    $('.player__duration-est').text(formatTime(durationSec));
+    if (typeof interval != 'undefined') {
         clearInterval(interval);
     }
-
     interval = setInterval(() => {
-        const completedSec = player.getCurrentTime();
-        const completedPercent = (completedSec / durationSec) * 100;
-
-        $(".player__playback-button").css({
+        const comletedSec = player.getCurrentTime();
+        const completedPercent = (comletedSec / durationSec) * 100;
+        $('.player__playback-botton').css({
             left: `${completedPercent}%`
-        });
-
+        })
+        $('.player__duration-compl').text(formatTime(comletedSec));
     }, 1000);
 };
-
-
 const onPlayerStateChange = event => {
-    switch(event.data){
+    switch (event.data) {
         case 1:
-            playerContainer.addClass("active");
-            playerStart.addClass("player--paused");
+            playerContainer.addClass('player-active');
+            playerContainer.addClass('paused');
             break;
         case 2:
-            playerContainer.removeClass("active");
-            playerStart.removeClass("player--paused");
+            playerContainer.removeClass('player-active');
+            playerContainer.removeClass('paused');
             break;
-    }
-}
-
+    };
+};
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('yt-player', {
         height: '405',
         width: '660',
-        videoId: 'LXb3EKWsInQ',
-        events:{
+        videoId: 'vU09wQerc54',
+        events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
         },
@@ -529,14 +624,13 @@ function onYouTubeIframeAPIReady() {
             showinfo: 0,
             rel: 0,
             autoplay: 0,
-            modesbranding: 0
+            modestbranding: 0,
         }
-    })
-};
-
-
-eventsInit();
-     
+    });
+}
+eventInit();
+        
+        
         
         
         
