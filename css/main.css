@@ -21,7 +21,6 @@
 .phone-backgr {
   display: none;
   position: relative;
-  top: -5%;
   left: 0; }
   @media screen and (max-width: 768px) {
     .phone-backgr {
@@ -29,6 +28,9 @@
 
 .phone-backgr-hero {
   width: 100%; }
+  @media screen and (max-width: 768px) {
+    .phone-backgr-hero {
+      width: 90%; } }
 
 .header {
   display: flex;
@@ -101,6 +103,9 @@
   @media screen and (max-width: 768px) {
     .section__title1 {
       margin-bottom: 1rem; } }
+  @media screen and (max-width: 480px) {
+    .section__title1 {
+      margin-bottom: 0; } }
 
 .explain {
   position: relative;
@@ -111,7 +116,7 @@
   color: white; }
   @media screen and (max-width: 768px) {
     .explain {
-      margin-top: 0;
+      margin-top: 10px;
       padding: 0 25%; } }
   @media screen and (max-width: 480px) {
     .explain {
@@ -121,7 +126,7 @@
   margin-top: 6rem; }
   @media screen and (max-width: 768px) {
     .btn {
-      margin-top: 0.5rem; } }
+      margin-top: 1rem; } }
 
 .btn-text {
   display: flex;
@@ -145,7 +150,7 @@
   position: relative;
   width: 31.25rem;
   fill: #fff;
-  margin-top: 15rem;
+  margin-top: 12rem;
   color: white;
   font-family: 'AlegreyaSans-Regular';
   font-size: 1rem; }
@@ -456,7 +461,7 @@
   width: 4.4rem; }
 
 .section {
-  height: 100vh;
+  height: 100%;
   top: auto;
   left: auto;
   margin: auto;
@@ -1258,6 +1263,20 @@ input {
       flex-direction: column;
       align-items: center; } }
 
+.player {
+  display: flex;
+  flex-direction: column;
+  max-width: 660px;
+  width: 100%;
+  height: 406px;
+  position: relative; }
+  @media screen and (max-width: 768px) {
+    .player {
+      width: 95%; } }
+  @media screen and (max-width: 480px) {
+    .player {
+      max-height: 295px; } }
+
 .player-img-1 {
   position: absolute;
   top: 75%;
@@ -1291,20 +1310,6 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center; }
-
-.player {
-  display: flex;
-  flex-direction: column;
-  max-width: 660px;
-  width: 100%;
-  height: 406px;
-  position: relative; }
-  @media screen and (max-width: 768px) {
-    .player {
-      width: 95%; } }
-  @media screen and (max-width: 480px) {
-    .player {
-      max-height: 295px; } }
 
 .player__wrapper {
   position: relative;
@@ -1659,6 +1664,7 @@ input {
   height: 16px;
   border-radius: 50%;
   border: 1px solid transparent;
+  border-color: transparent;
   display: block;
   position: relative; }
   .fixed-menu__link:before {
@@ -1677,6 +1683,13 @@ input {
   border-color: black; }
 .shadowed .fixed-menu__link:before {
   background: black; }
+.shadowed .burger__line {
+  background-color: black; }
+.shadowed .fixed-menu__link--active {
+  border-color: black; }
+
+.fixed-menu__link--active {
+  border-color: white; }
 
 html {
   font-size: 16px; }
