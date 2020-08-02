@@ -32,6 +32,7 @@ body{
     font-family: 'Alegreya Sans-Black';
     font-size: $baseFont;
     color: black;
+    overflow: hidden;
 }
 .wrapper{
     position: absolute;
@@ -53,7 +54,9 @@ a {
     will-change: transform;
 }
 
-
+.green{
+    color:#365a49;
+}
 
 
 

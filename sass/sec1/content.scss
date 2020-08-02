@@ -26,13 +26,17 @@
 .phone-backgr{
     display: none;
     position: relative;
-    top: -5%;
+    
     left: 0;
     
     @include tablets{
         display: block;
     }
+    
 }
 .phone-backgr-hero{
     width: 100%;
+    @include tablets {
+        width: 90%;
+    }
 }

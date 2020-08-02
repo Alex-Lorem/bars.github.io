@@ -1,3 +1,19 @@
+.player {
+  display: flex;
+  flex-direction: column;
+  max-width: 660px;
+  width: 100%;
+  height: 406px;
+  position: relative;
+
+  @include tablets {
+    width: 95%;
+  }
+
+  @include phones {
+    max-height: 295px;
+  }
+}
 .player-img-1{
     position: absolute;
     top: 75%;
@@ -38,22 +54,7 @@
 }
 
 
-.player {
-  display: flex;
-  flex-direction: column;
-  max-width: 660px;
-  width: 100%;
-  height: 406px;
-  position: relative;
 
-  @include tablets {
-    width: 95%;
-  }
-
-  @include phones {
-    max-height: 295px;
-  }
-}
 
 
 .player__wrapper {
@@ -76,7 +77,9 @@
   z-index: 3;
   overflow: hidden;
 }
-
+.disappear{
+    display: none;
+}
 
 .player__splash img {
   width: 100%;
@@ -107,7 +110,15 @@
   display: flex;
   align-items: center;
 }
-
+.paused{
+    .player__controls{
+        .player__start{
+            background: url('../img/section_9/paused.png') no-repeat;
+            background-position: center;
+           
+        }
+    }
+}
 
 .player__start {
   width: 55px;
@@ -117,6 +128,7 @@
   background-position: center;
   margin-right: 10px;
 }
+
 
 .player--paused {
   background: url(https://3.downloader.disk.yandex.ru/preview/94e2edcc992f11d0dc19a03fc160de849fcb5a4dd03f9047f57ee29b6b945220/inf/plwDV5v8CXESIxoBrdKgZqLRT4klZFjb2YRDc_TULm7uM17VujzewcFuw6r6zVKtWYtPPeDeBP65AEHcWim8FA%3D%3D?uid=208008506&filename=pause.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=208008506&tknv=v2&size=1903x937) no-repeat;
@@ -174,13 +186,19 @@
   width: 40px;
   height: 20px;
   border: none;
-  background: url("../img/section_9/volume.png") no-repeat;
+  background-image: url("../img/section_9/volume.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 80%;
   background-position: center;
   margin-right: 10px;
 }
 
 .volume__pic--nosound {
-  background: url(https://3.downloader.disk.yandex.ru/preview/1ff454e4c736305985da183fd24879025f9278733ea0823742a1310ba5c33187/inf/J2wFxh0439UVOFRqa4BruzKhyyoFv8zjYXJ914XWi_3DZRLUUWAlfEmMBASHYA_Tji0GJJnPoGiV8N4Z3HA2PQ%3D%3D?uid=208008506&filename=nosoud.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=208008506&tknv=v2&size=1903x937) no-repeat;
+  background-image: url("../img/section_9/nosound.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 80%;
   background-position: center;
 }
 

@@ -12,8 +12,13 @@
 
 .fixed-menu__item{
     margin-bottom: 5px;
-}
     
+}
+.fixed-menu__item--active{
+    .fixed-menu__link{
+        border-color: #fff;
+    }
+}
         .fixed-menu__link{
             &:hover{
                 border-color:#fff;
@@ -26,8 +31,10 @@
     height: 16px;
     border-radius: 50%;
     border: 1px solid transparent;
+    border-color: transparent;
     display: block;
     position: relative;
+    
     
     &:before{
         content: '';
@@ -44,15 +51,32 @@
     }
 
 .shadowed {
+     
     .fixed-menu__link{
         &:hover{
             border-color: black;
         }
     }
     .fixed-menu__link{
+        //border-color: black;
         &:before{
             background: black;
         }    
     }
+    .burger__line{
+        background-color: black;
+    }
+    .fixed-menu__link--active{
+        border-color: black;
+}
+}
+.fixed-menu__link--active{
+    border-color: white;
+}
+.fixed-menu__item--active--shadowed{
+    .fixed-menu__link{
+        border-color: black;
+    }
+
 }
     
