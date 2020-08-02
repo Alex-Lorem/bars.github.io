@@ -843,7 +843,7 @@ input {
 
 #map {
   width: 100%;
-  height: 100%; }
+  height: 90%; }
 
 .footer {
   width: 100%;
@@ -1329,6 +1329,9 @@ input {
   z-index: 3;
   overflow: hidden; }
 
+.disappear {
+  display: none; }
+
 .player__splash img {
   width: 100%;
   height: 90%; }
@@ -1353,6 +1356,10 @@ input {
 .player__playback {
   display: flex;
   align-items: center; }
+
+.paused .player__controls .player__start {
+  background: url("../img/section_9/paused.png") no-repeat;
+  background-position: center; }
 
 .player__start {
   width: 55px;
@@ -1409,12 +1416,18 @@ input {
   width: 40px;
   height: 20px;
   border: none;
-  background: url("../img/section_9/volume.png") no-repeat;
+  background-image: url("../img/section_9/volume.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 80%;
   background-position: center;
   margin-right: 10px; }
 
 .volume__pic--nosound {
-  background: url(https://3.downloader.disk.yandex.ru/preview/1ff454e4c736305985da183fd24879025f9278733ea0823742a1310ba5c33187/inf/J2wFxh0439UVOFRqa4BruzKhyyoFv8zjYXJ914XWi_3DZRLUUWAlfEmMBASHYA_Tji0GJJnPoGiV8N4Z3HA2PQ%3D%3D?uid=208008506&filename=nosoud.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=208008506&tknv=v2&size=1903x937) no-repeat;
+  background-image: url("../img/section_9/nosound.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 80%;
   background-position: center; }
 
 .volume__playback {
@@ -1656,6 +1669,9 @@ input {
 .fixed-menu__item {
   margin-bottom: 5px; }
 
+.fixed-menu__item--active .fixed-menu__link {
+  border-color: #fff; }
+
 .fixed-menu__link:hover {
   border-color: #fff; }
 
@@ -1691,6 +1707,9 @@ input {
 .fixed-menu__link--active {
   border-color: white; }
 
+.fixed-menu__item--active--shadowed .fixed-menu__link {
+  border-color: black; }
+
 html {
   font-size: 16px; }
   @media screen and (max-width: 768px) {
@@ -1712,7 +1731,8 @@ html {
 body {
   font-family: 'Alegreya Sans-Black';
   font-size: 16px;
-  color: black; }
+  color: black;
+  overflow: hidden; }
 
 .wrapper {
   position: absolute;
@@ -1731,3 +1751,6 @@ a {
   height: 100%;
   transition: transform 1s;
   will-change: transform; }
+
+.green {
+  color: #365a49; }

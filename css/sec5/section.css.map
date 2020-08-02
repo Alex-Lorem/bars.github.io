@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAI;EACA,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,GAAG",
+"sources": ["../../sass/sec5/section.scss"],
+"names": [],
+"file": "section.css"
+}
