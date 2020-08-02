@@ -32,17 +32,17 @@
                 <div class="logo"><a href="" class=""><img src="./img/section_1/logo.png" alt="" class="pic">
                    </a></div>
                   <ul class="header__menu">
-                      <li><a href="" class="">О нас </a></li>
+                      <li><a href="" class="" data-scroll-to="hero">О нас </a></li>
                     
-                      <li><a href="" class="">Батончики</a></li>
-                      <li><a href="" class="">Команда</a></li>
+                      <li><a href="" class="" data-scroll-to="slider">Батончики</a></li>
+                      <li><a href="" class="" data-scroll-to="team">Команда</a></li>
                     
-                      <li><a href="" class="">Меню</a></li>
+                      <li><a href="" class="" data-scroll-to="menu">Меню</a></li>
                     
-                      <li><a href="" class="">Отзывы</a></li>
+                      <li><a href="" class="" data-scroll-to="reviews">Отзывы</a></li>
                     
-                      <li><a href="" class="">Как мы работаем</a></li>
-                      <li class="li-last"><a href="" class="">Контакты</a></li>
+                      <li><a href="" class="" data-scroll-to="player">Как мы работаем</a></li>
+                      <li class="li-last"><a href="" class="" data-scroll-to="map">Контакты</a></li>
                     </ul>
                     
                     <div class="number"><div class="svg-num">
@@ -249,7 +249,7 @@
                     <div class="slider__price">
                         <div class="slider__price-text">140 ₽</div>    
                     <div class="slider-btn">
-                    <a href="">
+                    <a href="" data-scroll-to="order">
                         <span class="btn-text slider-btn-position btn--green">
                             ЗАКАЗАТЬ
                         </span>
@@ -340,7 +340,7 @@
                     <div class="slider__price">
                         <div class="slider__price-text">140 ₽</div>    
                     <div class="slider-btn">
-                    <a href="">
+                    <a href="" data-scroll-to="order">
                         <span class="btn-text slider-btn-position btn--green">
                             ЗАКАЗАТЬ
                         </span>
@@ -690,7 +690,7 @@
            <div class="leaf-sec4"></div>
         <div class="container container-center">
 
-            <div class="sec4__title">ЗАКАЖИТЕ ДОСТАВКУ</div>
+            <div class="section__title green">ЗАКАЖИТЕ ДОСТАВКУ</div>
             
             <form action="" class="form" id="myForm">
                <div class="form-wrapper">
@@ -787,9 +787,10 @@
         
     </section>
         <section data-theme="black" data-sec-id="map" class="section ">
+        <div class="container">
         <div id="map"></div>
         
-    </section> 
+     
         <footer class="footer">
         <div class="container container--footer">
             <div class="info">
@@ -814,13 +815,15 @@
                 </li>
             </ul>
             
+               </div>
+            </footer>
         </div>
-    </footer>
+</section>
       </div>
     </div>
     <nav class="fixed-menu">
         <ul class="fixed-menu__list">
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link fixed-menu__link--active" data-scroll-to="hero"></a></li>
+            <li class="fixed-menu__item fixed-menu__item--active"><a href="" class="fixed-menu__link " data-scroll-to="hero"></a></li>
             <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="benefits"></a></li>
             <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="slider"></a></li>
             <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="team"></a></li>
@@ -831,6 +834,11 @@
             <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="map"></a></li>
         </ul>
     </nav>
+    <div class="burger" id="burger">
+                       <span class="burger__line"></span>
+                       <span class="burger__line"></span>
+                       <span class="burger__line"></span>
+                   </div>
     <div class="overlay" id="overlay">
                        <div class="overlay__menu" id="overlay__menu">
                          <nav class="menu">
@@ -874,13 +882,6 @@
                                  
                              </ul>
                          </nav>  
-                           
-                       
-         <div class="burger" id="burger">
-                       <span class="burger__line"></span>
-                       <span class="burger__line"></span>
-                       <span class="burger__line"></span>
-                   </div>
     
         </div>
     </div>
@@ -889,6 +890,7 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript">
     </script>
     <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="player.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
